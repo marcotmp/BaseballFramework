@@ -115,11 +115,13 @@ namespace Assets.Game.Tests.Edit.Specs.Gameplay
         internal int teamBRuns;
         internal string winner="";
         internal int maxInnings = 10;
+        internal int finalInning = 9;
 
         internal void CompleteInning()
         {
-            if (inning >= 9)
+            if (inning >= finalInning)
             {
+                // check draw
                 if (teamARuns == teamBRuns)
                 {
                     if (inning < maxInnings)

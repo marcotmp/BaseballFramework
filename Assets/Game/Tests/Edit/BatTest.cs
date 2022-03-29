@@ -9,7 +9,7 @@ public class BatTest
     [Test]
     public void OnPressLeft_BatMoveToTheLeft()
     {
-        //batter.Move(new Vector2(-1,0));
+        //batter.Move(new Vector2(-1,0)); 
     }
 
     [Test]
