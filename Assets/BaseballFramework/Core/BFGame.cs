@@ -14,7 +14,7 @@ namespace MarcoTMP.BaseballFramework.Core
         public BFPitcher pitcherActor;
         public BFBatter batterActor;
         public BFBall ballActor;
-
+        public InningsManager innings;
 
 
         public Competitors competitors;
@@ -23,6 +23,8 @@ namespace MarcoTMP.BaseballFramework.Core
         {
             pitcherActor.Update(deltaTime);
             batterActor.Update(deltaTime);
+
+            //innings.CompleteHalf();
         }
 
         public void Select1PlayerMode()

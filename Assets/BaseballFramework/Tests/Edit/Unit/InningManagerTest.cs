@@ -13,6 +13,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         private InningsManager innings;
         private CompetingTeam home;
         private CompetingTeam visitor;
+
         [SetUp]
         public void Setup()
         {
@@ -24,15 +25,12 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         }
 
         [Test]
-        public void DeffensiveAndOffensiveChangeWhenInningComplete()
+        public void DeffensiveAndOffensiveChangeWhenHalfInningComplete()
         {
-            innings.ofensive = new CompetingTeam { team = "Aguilas" };
-            innings.defensive = new CompetingTeam { team = "Licey" }; 
+            innings.CompleteHalf();
 
-            innings.CompleteInning();
-
-            Assert.AreEqual("Licey", innings.ofensive.team);
-            Assert.AreEqual("Aguilas", innings.defensive.team);
+            Assert.AreEqual(visitor.team, innings.ofensive.team);
+            Assert.AreEqual(home.team, innings.defensive.team);
         }
 
         [Test]
@@ -126,51 +124,31 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             Assert.AreEqual("Empate", innings.winner);
             Assert.AreEqual(10, innings.inning);
         }
-    }
 
-    public class InningsManager
-    {
-        public int inning;
-        internal int finalInning = 9;
-
-        public CompetingTeam ofensive;
-        public CompetingTeam defensive;
-        public string winner;
-        internal int maxInnings = 9;
-
-        internal void CompleteInning()
+        [Test]
+        public void FirstHalfDoesntCompleteInning()
         {
-            if (inning >= finalInning)
-            {
-                // check draw
-                if (ofensive.runs == defensive.runs)
-                {
-                    if (inning < maxInnings)
-                    {
-                        winner = "";
-                        inning++; // extra inning
-                    }
-                    else
-                        winner = "Empate";
-                }
-                else if (ofensive.runs > defensive.runs)
-                    winner = ofensive.team;
-                else
-                    winner = defensive.team;
-            }
-            else
-            {
-                inning++;
-                winner = "";
-                CompleteHalf();
-            }
+            bool inningCompleted = false;
+            innings.half = Half.FirstHalf;
+            innings.OnInningComplete = () => {
+                inningCompleted = true;
+            };
+            innings.CompleteHalf();
+
+            Assert.IsFalse(inningCompleted, "Should not complete inning");
         }
 
-        public void CompleteHalf()
+        [Test]
+        public void SecondHalfCompleteInning()
         {
-            CompetingTeam tmpOfensive = ofensive;
-            ofensive = defensive;
-            defensive = tmpOfensive;
+            bool inningCompleted = false;
+            innings.half = Half.SecondHalf;
+            innings.OnInningComplete = () => {
+                inningCompleted = true;
+            };
+            innings.CompleteHalf();
+
+            Assert.IsTrue(inningCompleted, "Should complete inning");
         }
     }
 }
