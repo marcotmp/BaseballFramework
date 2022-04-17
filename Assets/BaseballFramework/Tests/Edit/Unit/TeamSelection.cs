@@ -35,9 +35,5 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             //teams == listOfTeams;
         }
     }
-
-    public class Game
-    {
-        internal string teamSelected;
-    }
+    
 }

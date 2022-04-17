@@ -9,10 +9,10 @@ namespace MarcoTMP.BaseballFramework.Core
 {
     public class BFPitcher
     {
-        public Action OnStartPitchingAnim { get; set; }
         public string state = "IDLE";
-        public Action StartAnimation { get; set; }
+        public Action OnStartPitchingAnim { get; set; }
         private Timer timer = new Timer();
+        public Action onReleaseBall;
 
         virtual public void Update(float dt)
         {
@@ -23,7 +23,7 @@ namespace MarcoTMP.BaseballFramework.Core
                 if (isDone)
                 {
                     state = "PITCHING";
-                    StartAnimation?.Invoke();
+                    OnStartPitchingAnim?.Invoke();
                 }
             }
             Debug.Log(state);
@@ -45,5 +45,12 @@ namespace MarcoTMP.BaseballFramework.Core
             state = "PITCHING";
         }
 
+        /// <summary>
+        /// Must be called when the animation frame is the right one to release the ball
+        /// </summary>
+        public void ReleaseBall()
+        {
+            onReleaseBall?.Invoke();
+        }
     }
 }

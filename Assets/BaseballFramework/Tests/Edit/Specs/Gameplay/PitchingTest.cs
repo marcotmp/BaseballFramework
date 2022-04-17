@@ -1,5 +1,4 @@
-﻿using NSubstitute;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System;
 
 namespace Assets.Game.Tests.Edit.Spec.Gameplay
@@ -14,8 +13,8 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
             var ball = new Ball();
             var ampayer = new Ampayer();
 
-            pitcher = Substitute.For<Pitcher>();
-
+            game.ball = ball;
+            game.pitcher = pitcher;
 
             //Given pitcher is ready to pitch
             pitcher.isReady = true;
@@ -24,13 +23,13 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
             game.SetState("Pitching");
 
             //Then pitcher pick lanzamiento
-            Assert.AreEqual(pitcher.GetPitchStrategy(), "recta");
+            Assert.AreEqual(pitcher.GetPitchStrategy(), "Rect");
 
             //When thingking for x seconds
             pitcher.Update(3);
 
             //Then inicia anim lanzamiento
-            pitcher.StartPitchingAnim();//.WasCalled;
+            pitcher.OnStartPitchingAnim();//.WasCalled;
 
             //When pitcher in frame de lanzamiento
             pitcher.ReleaseBall();
@@ -49,10 +48,20 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
     public class Game
     {
         internal Bases bases;
+        internal Ball ball;
+        internal Pitcher pitcher;
+
+        public Game()
+        {
+            pitcher.onReleaseBall = () => {
+                ball.MoveTo("Home");
+            };
+        }
 
         internal void SetState(string v)
         {
-            throw new NotImplementedException();
+            if (v == "Pitching")
+                pitcher.StartPitching();
         }
 
         internal void Touch(Ball ball, object home)
@@ -66,20 +75,23 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
         internal bool isReady;
         public string GetPitchStrategy() 
         {
-            return "";
+            return "Rect";
         }
 
         internal void ReleaseBall()
         {
-            throw new NotImplementedException();
+            onReleaseBall?.Invoke();
         }
 
-        internal object StartPitchingAnim()
+        public Action OnStartPitchingAnim;
+        internal Action onReleaseBall;
+
+        internal void Update(object timeElapsed)
         {
             throw new NotImplementedException();
         }
 
-        internal void Update(object timeElapsed)
+        internal void StartPitching()
         {
             throw new NotImplementedException();
         }

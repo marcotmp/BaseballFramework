@@ -13,14 +13,16 @@ public class Pitcher : MonoBehaviour
     {
         this.pitcher = pitcher;
         pitcher.OnStartPitchingAnim = () => {
-            animator.SetTrigger("Pitching");
+            //animator.SetTrigger("Pitching");
+            Debug.Log("Animator Start Pitching");
+            Invoke(nameof(Anim_OnReleaseBall), 1);
         };
     }
 
-    public void Anim_OnDropBall()
+    public void Anim_OnReleaseBall()
     {
         // when anim is in the right frame, release the ball
-        //pitcher.DropBall();
+        pitcher.ReleaseBall();
     }
 
     public void Anim_OnPitchCompleted()

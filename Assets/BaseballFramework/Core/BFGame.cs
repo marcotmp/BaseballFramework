@@ -5,7 +5,8 @@ namespace MarcoTMP.BaseballFramework.Core
     public enum GameState
     {
         RunningAndCatching,
-        BattingAndPitching
+        BattingAndPitching,
+        Strike
     }
 
     public class BFGame // 9InningBasballSimulation
@@ -24,6 +25,7 @@ namespace MarcoTMP.BaseballFramework.Core
             pitcherActor.Update(deltaTime);
             batterActor.Update(deltaTime);
 
+            //if (ballActor touch home) change to Strike
             //innings.CompleteHalf();
         }
 
@@ -42,6 +44,20 @@ namespace MarcoTMP.BaseballFramework.Core
         {
             competitors.home = new CompetingTeam { type = CompetingType.Human };
             competitors.visitor = new CompetingTeam { type = CompetingType.Human };
+        }
+
+        public void SetState(GameState battingAndPitching)
+        {
+            pitcherActor.onReleaseBall = () =>
+            {
+                ballActor.MoveTo("Home");
+            };
+            pitcherActor.StartPitching();
+        }
+
+        public void BallTouchHome()
+        {
+            state = GameState.Strike;
         }
     }
 

@@ -1,5 +1,4 @@
-﻿using Assets.BaseballFramework.Tests.Edit.Specs.Gameplay;
-using MarcoTMP.BaseballFramework.Core;
+﻿using MarcoTMP.BaseballFramework.Core;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -9,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace Assets.BaseballFramework.Tests.Edit.Unit
 {
-    public class BallTest
+    public class BFBallTest
     {
         [Test]
-        public void Test()
+        public void BallMove()
         {
             var ball = new BFBall();
-        }
+            ball.MoveTo("Home");
+            Assert.AreEqual("Home", ball.moveTo, $"Should move to {ball.moveTo}");
+        }            
     }
 }

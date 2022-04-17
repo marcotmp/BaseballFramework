@@ -37,10 +37,6 @@ namespace Assets.BaseballFramework.Tests.Edit.Specs.Gameplay
         // When batter is close to ball => do swing
     }
 
-    public class BFBall
-    {
-    }
-
     public class AIBatterController
     {
         public float range;

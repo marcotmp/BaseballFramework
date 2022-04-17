@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         //game.batterActor.OnStartSwing = batter.DoSwing;
         ball.ConnectActor(game.ballActor);
 
-        _pitcher.StartPitching();
+        game.SetState(GameState.BattingAndPitching);
     }
 
     // Update is called once per frame

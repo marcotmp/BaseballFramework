@@ -27,6 +27,66 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             //Assert.Equals(pitcher.state, "Pitching");
         }
 
+        [Test]
+        public void Test()
+        {
+            Assert.NotNull(pitcher);
+        }
+
+        [Test]
+        public void PitcherStartInIDLEState()
+        {
+            Assert.AreEqual("IDLE", pitcher.state);
+        }
+
+        [Test]
+        public void IDLE_To_THINK()
+        {
+            pitcher.StartPitching();
+
+            Assert.AreEqual("THINK", pitcher.state);
+        }
+
+        [Test]
+        public void THINK_To_PITCHING()
+        {
+            bool animStarted = false;
+            pitcher.OnStartPitchingAnim = () => { animStarted = true; };
+
+            pitcher.state = "THINK";
+            pitcher.Update(0.5f);
+            Assert.AreEqual("THINK", pitcher.state);
+
+            pitcher.Update(0.5f);
+            Assert.AreEqual("PITCHING", pitcher.state);
+            Assert.IsTrue(animStarted, "Should start animation");
+        }
+
+        [Test]
+        public void Pitching_To_Throw()
+        {
+            bool isThrowingBall = false;
+            pitcher.onReleaseBall = () => { isThrowingBall = true; };
+
+            // Given pitcher is on pitching state
+            pitcher.state = "PITCHING";
+
+            // When anim is in frame to release the ball
+            pitcher.ReleaseBall();
+
+            // Then ball start moving
+            Assert.IsTrue(isThrowingBall, "releasBall should be dispatched");
+        }
+
+        [Test]
+        public void PITCHING_To_IDLE()
+        {
+            // when animation stop
+            // change to idle
+            pitcher.AnimationCompleted();
+            Assert.AreEqual("PITCHING", pitcher.state);
+        }
+
         //[TestCase(0, "Rect")]
         //[TestCase(1, "CurveRight")]
         //[TestCase(2, "CurveLeft")]
@@ -92,18 +152,6 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         //    pitcher.InitAnimation = () => animationCalled = true;
 
         //    Assert.AreEqual(true, animationCalled, "was not called");
-        //}
-
-        //[Test]
-        //public void PitcherInFrameLanzamiento_BallStartMoving()
-        //{
-        //    var fakeBall = new Ball();
-        //    pitcher.ballReference = fakeBall;
-
-        //    pitcher.FrameDeLanzamiento();
-        //    // ball is released with the selected ball movement;
-
-        //    Assert.IsTrue(fakeBall.isMoving);
         //}
     }
 

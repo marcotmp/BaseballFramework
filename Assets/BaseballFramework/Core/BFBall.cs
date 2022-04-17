@@ -8,5 +8,11 @@ namespace MarcoTMP.BaseballFramework.Core
 {
     public class BFBall
     {
+        public string moveTo;
+
+        public void MoveTo(string where)
+        {
+            moveTo = where;
+        }
     }
 }

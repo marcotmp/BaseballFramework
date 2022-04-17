@@ -34,6 +34,12 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         }
 
         [Test]
+        public void GameHas9Innings()
+        {
+        }
+
+
+        [Test]
         public void PlayerWin()
         {
             // given

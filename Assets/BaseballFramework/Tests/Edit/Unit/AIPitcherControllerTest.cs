@@ -49,7 +49,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         public void THINK_To_PITCHING()
         {
             bool animStarted = false;
-            pitcher.StartAnimation = () => { animStarted = true; };
+            pitcher.OnStartPitchingAnim = () => { animStarted = true; };
 
             pitcher.state = "THINK";
             pitcher.Update(0.5f);
@@ -59,6 +59,21 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             Assert.AreEqual("PITCHING", pitcher.state);
             Assert.IsTrue(animStarted, "Should start animation"); 
         }
+
+        //[Test]
+        //public void Pitching_To_Throw()
+        //{
+        //    // Given pitcher is on pitching state
+        //    pitcher.state = "PITCHING";
+            
+        //    // When anim is in frame to release the ball
+        //    pitcher.ReleaseBall();
+
+        //    //pitcher.onReleaseBall = () => { };
+
+        //    // Then ball start moving
+        //    //Assert.IsTrue("RECT", ball.strategy, "ball should move in a rect");
+        //}
 
         [Test]
         public void PITCHING_To_IDLE()

@@ -53,27 +53,42 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         }
 
         [Test]
-        public void GameHas9Innings()
+        public void PitcherThrowBall()
         {
-
+            // when game enters pitching mode
+            // then pitcher pitches the ball
         }
 
         [Test]
-        public void OnFirstHalfOffensiveIsHomeAndDeffensiveIsVisitor()
+        public void WhenPitcherReleaseBall_BallMoveToHome()
         {
+            // Given game is in batting and pitching state
+            var game = new BFGame();
+            var pitcher = new BFPitcher();
+            var ball = new BFBall();
+            game.pitcherActor = pitcher;
+            game.ballActor = ball;
+            game.SetState(GameState.BattingAndPitching);
 
+            // When pitcher release the ball
+            pitcher.ReleaseBall();
+            Assert.AreEqual("Home", ball.moveTo);
         }
 
         [Test]
-        public void DeffensiveAndOffensiveChangeWhenInningComplete()
+        public void WhenBallTouchBaseChangeToStrike()
         {
-            //game.innings.ofensive = "Aguilas";
-            //game.innings.defensive = "Licey";
+            var game = new BFGame();
+            var pitcher = new BFPitcher();
+            var ball = new BFBall();
+            game.pitcherActor = pitcher;
+            game.ballActor = ball;
+            //game.SetState(GameState.BattingAndPitching);
 
-            //game.innings.CompleteInning();
+            //When pelota toca al home
+            game.BallTouchHome();
 
-            //Assert.AreEquals("Licey", game.innings.ofensive);
-            //Assert.AreEquals("Aguilas", game.innings.defensive);
+            Assert.AreEqual(GameState.Strike, game.state, "should be strike");
         }
     }
 }
