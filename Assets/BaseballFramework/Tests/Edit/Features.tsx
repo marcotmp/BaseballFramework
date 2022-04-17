@@ -188,5 +188,3 @@ Gameplay {
 		defensive uses AI team and controller
 	}
 }
-
-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
