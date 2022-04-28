@@ -10,7 +10,13 @@ namespace MarcoTMP.BaseballFramework.Core
 
     public class BatterHumanController : IBatterController
     {
+        public BFInputController inputController;
         private BFBatter batter;
+
+        public BatterHumanController(BFInputController inputController) 
+        {
+            this.inputController = inputController;
+        }
 
         public void MoveAxis(Vector3 vector3)
         {
@@ -25,6 +31,11 @@ namespace MarcoTMP.BaseballFramework.Core
         public void SetBatter(BFBatter batter)
         {
             this.batter = batter;
+        }
+
+        public void Update(float dt)
+        {
+            var a = inputController.buttonA;
         }
     }
 }

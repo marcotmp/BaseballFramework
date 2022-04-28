@@ -1,10 +1,11 @@
 using Baseball;
-using MarcoTmp.States;
+using MarcoTMP.BaseballFramework.Core;
+using MarcoTMP.BaseballFramework.Core.States;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseballState : MonoBehaviour, IState
+public class BaseballState : MonoBehaviour//, IState
 {
     public virtual void Enter()
     {
@@ -25,16 +26,22 @@ public class BaseballState : MonoBehaviour, IState
     {
         throw new System.NotImplementedException();
     }
+
+    public void Update(float dt)
+    {
+        throw new System.NotImplementedException();
+    }
 }
 
 public class PitchingState : BaseballState
 {
-    private GameController game;
+   // private GameController game;
+    private BFBatter batter;
 
-    public PitchingState(GameController game)
-    {
-        this.game = game;
-    }
+    //public PitchingState(GameController game)
+    //{
+    //    this.game = game;
+    //}
 
     
 
@@ -46,6 +53,7 @@ public class PitchingState : BaseballState
         //game.SetPitchingView();
         // enable pitcher
         // enable bat
+        //batter.Enable();
 
         // allow base stealing... if offensive steals, change to FlyHitState
     }

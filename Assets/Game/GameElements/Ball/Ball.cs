@@ -16,7 +16,6 @@ public class Ball : MonoBehaviour
     {
         if (ball.moveTo == "Home")
         {
-            Debug.Log(ball.moveTo);
             transform.position += Vector3.back * speed * Time.deltaTime;
         }
     }

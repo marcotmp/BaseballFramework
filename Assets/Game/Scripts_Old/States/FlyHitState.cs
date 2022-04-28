@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FlyHitState : MonoBehaviour
 {
-    public GameController game;
+    //public GameController game;
     private void Enter()
     {
         // set top view

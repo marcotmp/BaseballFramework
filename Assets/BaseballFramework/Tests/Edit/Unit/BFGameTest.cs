@@ -1,6 +1,10 @@
-﻿using MarcoTMP.BaseballFramework.Core;
+﻿using Assets.BaseballFramework.Tests.Edit.Helpers;
+using MarcoTMP.BaseballFramework.Core;
+using MarcoTMP.BaseballFramework.Core.GameStates;
+using MarcoTMP.BaseballFramework.Core.States;
 using NSubstitute;
 using NUnit.Framework;
+using System;
 
 namespace Assets.BaseballFramework.Tests.Edit.Unit
 {
@@ -20,22 +24,33 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             Assert.NotNull(game);
         }
 
-        [Test]
+        [Test] // this test could be moved to another testcase
         public void InitOnBattingAndPitchState()
         {
-            Assert.AreEqual(GameState.BattingAndPitching, game.state);
+            // this code should be initialised in game;
+            FakeFiniteStateMachine<BFGame> fsm = new FakeFiniteStateMachine<BFGame>();
+            var state = new BattingAndPitchingState();
+            fsm.AddState(state);
+            //BFGame.FSMFactory = () => fsm;
+            var game = new BFGame();
+            game.SetFSM(fsm);
+            game.defaultState = state;
+
+            game.Start();
+
+            Assert.AreEqual(typeof(BattingAndPitchingState), fsm.changeStateByTypeCalledWithParamU);
         }
 
         [Test]
-        public void BattingAndPitchingUpdatePitcherAndBatter()
+        public void UpdateFSM()
         {
-            game.batterActor = Substitute.For<BFBatter>();
-            game.pitcherActor = Substitute.For<BFPitcher>();
+            var fsm = new FakeFiniteStateMachine<BFGame>();
+            var game = new BFGame();
+            game.SetFSM(fsm);
 
-            game.Update(1);
+            game.Update(0);
 
-            game.batterActor.Received().Update(1);
-            game.pitcherActor.Received().Update(1);
+            Assert.IsTrue(fsm.isUpdateCalled);
         }
 
         [Test]
@@ -50,45 +65,6 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             Assert.NotNull(game.competitors);
             Assert.NotNull(game.competitors.home);
             Assert.NotNull(game.competitors.visitor);
-        }
-
-        [Test]
-        public void PitcherThrowBall()
-        {
-            // when game enters pitching mode
-            // then pitcher pitches the ball
-        }
-
-        [Test]
-        public void WhenPitcherReleaseBall_BallMoveToHome()
-        {
-            // Given game is in batting and pitching state
-            var game = new BFGame();
-            var pitcher = new BFPitcher();
-            var ball = new BFBall();
-            game.pitcherActor = pitcher;
-            game.ballActor = ball;
-            game.SetState(GameState.BattingAndPitching);
-
-            // When pitcher release the ball
-            pitcher.ReleaseBall();
-            Assert.AreEqual("Home", ball.moveTo);
-        }
-
-        [Test]
-        public void WhenBallTouchBaseChangeToStrike()
-        {
-            var game = new BFGame();
-            var pitcher = new BFPitcher();
-            var ball = new BFBall();
-            game.pitcherActor = pitcher;
-            game.ballActor = ball;
-            //game.SetState(GameState.BattingAndPitching);
-
-            //When pelota toca al home
-            game.BallTouchHome();
-
-            Assert.AreEqual(GameState.Strike, game.state, "should be strike");
         }
     }
 }

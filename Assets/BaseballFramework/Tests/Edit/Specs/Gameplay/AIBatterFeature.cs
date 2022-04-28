@@ -16,7 +16,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Specs.Gameplay
             var ball = new BFBall();
             var batter = new BFBatter();
             var aiBatterController = new AIBatterController();
-            batter.SetController(aiBatterController);
+            //batter.SetController(aiBatterController);
 
 
             // when ball is close to batter

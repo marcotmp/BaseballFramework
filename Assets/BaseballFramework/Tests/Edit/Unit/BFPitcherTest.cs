@@ -1,4 +1,6 @@
+using Assets.BaseballFramework.Tests.Edit.Helpers;
 using MarcoTMP.BaseballFramework.Core;
+using MarcoTMP.BaseballFramework.Core.PitcherStates.AI;
 using NUnit.Framework;
 using System;
 
@@ -154,62 +156,42 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         //    Assert.AreEqual(true, animationCalled, "was not called");
         //}
     }
-
-    public class Pitcher
+    
+    public class PitcherStatesTest
     {
-        public string state;
-        public GameEvent listenEvent;
-        public string estrategy;
-        public int thinkingTime;
-        public Ball ballReference;
-        private PitcherController controller;
-
-        public Func<object> InitAnimation { get; internal set; }
-
-        internal void FrameDeLanzamiento()
+        [Test]
+        public void WaitAFewSecondsThenThrow()
         {
-            throw new NotImplementedException();
+            var fsm = new FakeFiniteStateMachine<BFPitcher>();
+            var state = new AIPitcherThinkingState();
+            state.delayTime = 1;
+            state.fsm = fsm;
+            state.Enter();
+
+            state.Update(0);
+            Assert.AreNotEqual(typeof(AIPitcherPitchingState), fsm.changeStateByTypeCalledWithParamU);
+
+            state.Update(1);
+            Assert.AreEqual(typeof(AIPitcherPitchingState), fsm.changeStateByTypeCalledWithParamU);
         }
 
-        internal void SetController(PitcherController controller)
+        [Test]
+        public void ReleaseTheBall()
         {
-            this.controller = controller;
-        }
+            var fsm = new FakeFiniteStateMachine<BFPitcher>();
+            var state = new AIPitcherPitchingState();
+            state.fsm = fsm;
+            var owner = new BFPitcher();
+            fsm.owner = owner;
+            bool animStarted = false;
 
-        internal void Update()
-        {
-            controller.Update();
-        }
-    }
+            owner.OnStartPitchingAnim = () => animStarted = true;
 
-    public class PitcherController
-    {
-        internal void Update()
-        {
-            throw new NotImplementedException();
-        }
-    }
+            // when enter state
+            state.Enter();
 
-    public class PitcherAIController : PitcherController
-    {
-        internal Func<int> randomSelector;// = () => UnityEngine.Random.Range(0, 5);
-    }
-
-    public class PitcherHumanController : PitcherController
-    {
-        internal bool pressUp;
-    }
-
-    public class GameEvent
-    {
-        internal void RaiseEvent(string v)
-        {
-            throw new NotImplementedException();
+            Assert.True(animStarted);
         }
     }
 
-    public class Ball
-    {
-        internal bool isMoving;
-    }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarcoTMP.BaseballFramework.Core.States;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,23 @@ namespace MarcoTMP.BaseballFramework.Core
         public Action OnStartPitchingAnim { get; set; }
         private Timer timer = new Timer();
         public Action onReleaseBall;
+        public bool isActive;
+        private FiniteStateMachine<BFPitcher> fsm;
 
+        internal void Enable()
+        {
+            isActive = true;
+        }
+
+        internal void Disable()
+        {
+            isActive = false;
+        }
         virtual public void Update(float dt)
         {
-            //controller.Update(dt);
+            fsm.Update(dt);
+            
+
             if (state == "THINK")
             {
                 bool isDone = timer.Tick(dt);
@@ -26,7 +40,7 @@ namespace MarcoTMP.BaseballFramework.Core
                     OnStartPitchingAnim?.Invoke();
                 }
             }
-            Debug.Log(state);
+            //Debug.Log(state);
         }
 
         public void StartPitching()
@@ -38,6 +52,12 @@ namespace MarcoTMP.BaseballFramework.Core
         {
             state = "THINK";
             timer.duration = 1;
+        }
+
+        public void SetBrain(FiniteStateMachine<BFPitcher> pitcherBrain)
+        {
+            fsm = pitcherBrain;
+            fsm.owner = this;
         }
 
         public void AnimationCompleted()
@@ -53,4 +73,43 @@ namespace MarcoTMP.BaseballFramework.Core
             onReleaseBall?.Invoke();
         }
     }
+
+    #region HumanStates
+    public class HumanActiveState
+    {
+        public void Enter() { }
+        public void Update() 
+        {
+            // press B -> pitch
+            // dPad left / right -> move left / right
+        }
+        public void Exit() { }
+    }
+    public class PitchState
+    {
+        public void Enter() { }
+        public void Update() { }
+        public void Exit() { }
+    }
+    #endregion HumanStates
+
+    #region AIStates
+    public class AIIdleState // wait a few seconds
+    {
+        public void Enter() { }
+        public void Update() { }
+        public void Exit() { }
+    }
+    public class AIThink // pick throw type -> move -> throw
+    {
+        public void Enter() { }
+        public void Update() 
+        {
+            // random move -> move and stay in this state
+            // random pitch -> change to pitch state
+        }
+        public void Exit() { }
+    }
+    
+    #endregion AIStates
 }

@@ -1,0 +1,2941 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 13}
+  - {fileID: 15}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1536
+    height: 731
+  m_MinSize: {x: 400, y: 200}
+  m_MaxSize: {x: 32384, y: 16192}
+  vertical: 0
+  controlID: 8507
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 184.8
+    y: 73.6
+    width: 587.60004
+    height: 411
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 587.60004, y: 390}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 1
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -235.04002
+    m_HBaseRangeMax: 235.04002
+    m_VBaseRangeMin: -156
+    m_VBaseRangeMax: 156
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 587.60004
+      height: 390
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 293.80002, y: 195}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -293.80002
+      y: -195
+      width: 587.60004
+      height: 390
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 734.50006, y: 513.75}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 774.4
+    height: 731
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 8473
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 7}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 774.4
+    height: 432
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 8450
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 184.8
+    height: 432
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 6}
+  m_Panes:
+  - {fileID: 6}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73.6
+    width: 183.8
+    height: 411
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 9888ffff5089ffffcc89ffff328dffffbe95ffffdaa7ffff12a8ffff3eaaffffd6aeffff86afffff8ebfffff3ec0ffff66c2ffff60cfffff80cfffffb0d0ffff4edfffff82dfffffb2e0ffffe6e0ffffb2e4ffff3ae5ffff7ee6ffff00e9ffff68e9ffff64eaffff1eedffffacedffff16fbffff565b0000587600005c7600008a7c00006a83000074830000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 5}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: e3f9c966f362c974884b2c31d84c0667
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 184.8
+    y: 0
+    width: 589.60004
+    height: 432
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 8}
+  - {fileID: 2}
+  - {fileID: 9}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 184.8
+    y: 73.6
+    width: 587.60004
+    height: 411
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData:
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -101, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 3
+      id: Tool Settings
+      index: 0
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -141, y: 149}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-grid-and-snap-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-scene-view-toolbar
+      index: 0
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-search-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Open Tile Palette
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Tilemap Focus
+      index: 3
+      layout: 4
+    - dockPosition: 0
+      containerId: overlay-container--left
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-transform-toolbar
+      index: 0
+      layout: 2
+    - dockPosition: 0
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 67.5, y: 86}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Orientation
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Light Settings
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Camera
+      index: 1
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Constraints
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Collisions
+      index: 3
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Navmesh Display
+      index: 4
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Agent Display
+      index: 5
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Obstacle Display
+      index: 6
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Occlusion Culling
+      index: 7
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Physics Debugger
+      index: 8
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Scene Visibility
+      index: 9
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Particles
+      index: 10
+      layout: 4
+  m_WindowGUID: 21f25ae045652e04aabe67ae2ed0f2da
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 0
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: -1.8536346, y: -1.9879025, z: -3.0203211}
+    speed: 2
+    m_Value: {x: -1.8536346, y: -1.9879025, z: -3.0203211}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 0
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    yGrid:
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0.23652035, y: -0.32191628, z: 0.08339997, w: 0.9129471}
+    speed: 2
+    m_Value: {x: 0.23652036, y: -0.3219163, z: 0.083399974, w: 0.9129472}
+  m_Size:
+    m_Target: 5.022657
+    speed: 2
+    m_Value: 5.022657
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.01
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 468
+    y: 181
+    width: 973
+    height: 501
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 432
+    width: 774.4
+    height: 299
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 11}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 505.6
+    width: 799
+    height: 278
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Game/GameElements/Gameplay
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 1
+  m_StartGridSize: 96
+  m_LastFolders:
+  - Assets/Game/GameElements/Gameplay
+  m_LastFoldersGridSize: 96
+  m_LastProjectPath: C:\Dev\Repositories\Baseball
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 194}
+    m_SelectedIDs: 7a550000
+    m_LastClickedID: 21882
+    m_ExpandedIDs: 0000000016550000185500001a5500001c5500001e550000205500002255000024550000265500004c550000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 10}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0000000016550000185500001a5500001c5500001e550000205500002255000024550000265500004c550000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 4c830000
+    m_LastClickedInstanceID: 33612
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000186c0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 10}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 96
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 312
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 505.6
+    width: 773.4
+    height: 278
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 774.4
+    y: 0
+    width: 415.19995
+    height: 731
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 774.4
+    y: 73.6
+    width: 413.19995
+    height: 710
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: 33516
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1189.6
+    y: 0
+    width: 346.40002
+    height: 731
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1189.6
+    y: 73.6
+    width: 345.40002
+    height: 710
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Spl:
+    ID: 8594
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 480
+    - 160
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 640
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 0}
+    m_NewResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories: []
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 16}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Baseball][suite]'
+      name: Baseball
+      fullName: Baseball
+      resultStatus: 1
+      duration: 0.1580123
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1035
+      uniqueId: '[Edit.dll][suite]'
+      name: Edit.dll
+      fullName: C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll
+      resultStatus: 1
+      duration: 0.1311131
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Baseball][suite]'
+    - id: 1036
+      uniqueId: Edit.dll/[Assets][suite]
+      name: Assets
+      fullName: Assets
+      resultStatus: 1
+      duration: 0.1292095
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1035
+      parentUniqueId: '[Edit.dll][suite]'
+    - id: 1065
+      uniqueId: Edit.dll/Assets/[BaseballFramework][suite]
+      name: BaseballFramework
+      fullName: Assets.BaseballFramework
+      resultStatus: 1
+      duration: 0.1275403
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1064
+      parentUniqueId: Edit.dll/[Assets][suite]
+    - id: 1066
+      uniqueId: Edit.dll/Assets/BaseballFramework/[Tests][suite]
+      name: Tests
+      fullName: Assets.BaseballFramework.Tests
+      resultStatus: 1
+      duration: 0.122616
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1065
+      parentUniqueId: Edit.dll/Assets/[BaseballFramework][suite]
+    - id: 1067
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/[Edit][suite]
+      name: Edit
+      fullName: Assets.BaseballFramework.Tests.Edit
+      resultStatus: 1
+      duration: 0.1187084
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1066
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/[Tests][suite]
+    - id: 1089
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Specs][suite]
+      name: Specs
+      fullName: Assets.BaseballFramework.Tests.Edit.Specs
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1087
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/[Edit][suite]
+    - id: 1090
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Specs/[Edit][Assets.BaseballFramework.Tests.Edit.Specs.Gameplay][suite]
+      name: Gameplay
+      fullName: Assets.BaseballFramework.Tests.Edit.Specs.Gameplay
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1089
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Specs][suite]
+    - id: 1062
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Specs/Gameplay/[Edit][Assets.BaseballFramework.Tests.Edit.Specs.Gameplay.AIBatterFeature][suite]
+      name: AIBatterFeature
+      fullName: Assets.BaseballFramework.Tests.Edit.Specs.Gameplay.AIBatterFeature
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1090
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Specs/[Edit][Assets.BaseballFramework.Tests.Edit.Specs.Gameplay][suite]
+    - id: 1063
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Specs/Gameplay/AIBatterFeature/[Edit][Assets.BaseballFramework.Tests.Edit.Specs.Gameplay.AIBatterFeature.WhenBallClose_DoSwing]
+      name: WhenBallClose_DoSwing
+      fullName: Assets.BaseballFramework.Tests.Edit.Specs.Gameplay.AIBatterFeature.WhenBallClose_DoSwing
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Specs/Gameplay/[Edit][Assets.BaseballFramework.Tests.Edit.Specs.Gameplay.AIBatterFeature][suite]
+    - id: 1068
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+      name: Unit
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit
+      resultStatus: 1
+      duration: 0.1139968
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1067
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/[Edit][suite]
+    - id: 1052
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest][suite]
+      name: AIPitcherControllerTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest
+      resultStatus: 1
+      duration: 0.0104433
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1088
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1055
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/AIPitcherControllerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.IDLE_To_THINK]
+      name: IDLE_To_THINK
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.IDLE_To_THINK
+      resultStatus: 1
+      duration: 0.0007196
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest][suite]
+    - id: 1054
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/AIPitcherControllerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.PitcherStartInIDLEState]
+      name: PitcherStartInIDLEState
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.PitcherStartInIDLEState
+      resultStatus: 1
+      duration: 0.0002751
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest][suite]
+    - id: 1057
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/AIPitcherControllerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.PITCHING_To_IDLE]
+      name: PITCHING_To_IDLE
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.PITCHING_To_IDLE
+      resultStatus: 1
+      duration: 0.0003067
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest][suite]
+    - id: 1053
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/AIPitcherControllerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.Test]
+      name: Test
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.Test
+      resultStatus: 1
+      duration: 0.000245
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest][suite]
+    - id: 1056
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/AIPitcherControllerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.THINK_To_PITCHING]
+      name: THINK_To_PITCHING
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.THINK_To_PITCHING
+      resultStatus: 1
+      duration: 0.0021067
+      messages: 
+      output: 'THINK
+
+        PITCHING
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest][suite]
+    - id: 1056
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BallTest][suite]
+      name: BallTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BallTest
+      resultStatus: 1
+      duration: 0.0090571
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1088
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1057
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BallTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BallTest.Test]
+      name: Test
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BallTest.Test
+      resultStatus: 1
+      duration: 0.0005008
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1056
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BallTest][suite]
+    - id: 1024
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BatterHumanControllerTest][suite]
+      name: BatterHumanControllerTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BatterHumanControllerTest
+      resultStatus: 1
+      duration: 0.0088438
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1068
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1025
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BatterHumanControllerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BatterHumanControllerTest.DoSwing]
+      name: DoSwing
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BatterHumanControllerTest.DoSwing
+      resultStatus: 1
+      duration: 0.001961
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BatterHumanControllerTest][suite]
+    - id: 1049
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest][suite]
+      name: BFBallTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest
+      resultStatus: 1
+      duration: 0.0083705
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1108
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1050
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFBallTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest.BallMove]
+      name: BallMove
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest.BallMove
+      resultStatus: 1
+      duration: 0.0003815
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest][suite]
+    - id: 1026
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+      name: BFGameTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest
+      resultStatus: 1
+      duration: 0.0122876
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1070
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1065
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.BattingAndPitchingUpdatePitcherAndBatter]
+      name: BattingAndPitchingUpdatePitcherAndBatter
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.BattingAndPitchingUpdatePitcherAndBatter
+      resultStatus: 1
+      duration: 0.0005399
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1027
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.CreateBFGame]
+      name: CreateBFGame
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.CreateBFGame
+      resultStatus: 1
+      duration: 0.0001859
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1066
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.GameHasTwoCompetitors]
+      name: GameHasTwoCompetitors
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.GameHasTwoCompetitors
+      resultStatus: 1
+      duration: 0.0001559
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1064
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.InitOnBattingAndPitchState]
+      name: InitOnBattingAndPitchState
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.InitOnBattingAndPitchState
+      resultStatus: 1
+      duration: 0.0001573
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1054
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.PitcherThrowBall]
+      name: PitcherThrowBall
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.PitcherThrowBall
+      resultStatus: 1
+      duration: 0.0001215
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1058
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.WhenBallTouchBaseChangeToStrike]
+      name: WhenBallTouchBaseChangeToStrike
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.WhenBallTouchBaseChangeToStrike
+      resultStatus: 1
+      duration: 0.0008425
+      messages: 
+      output: 'It was strike
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1059
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.WhenEnterStrikeState_CallShowStrike]
+      name: WhenEnterStrikeState_CallShowStrike
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.WhenEnterStrikeState_CallShowStrike
+      resultStatus: 1
+      duration: 0.0005399
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1056
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFGameTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.WhenPitcherReleaseBall_BallMoveToHome]
+      name: WhenPitcherReleaseBall_BallMoveToHome
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.WhenPitcherReleaseBall_BallMoveToHome
+      resultStatus: 1
+      duration: 0.0001673
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest][suite]
+    - id: 1056
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+      name: BFPitcherTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest
+      resultStatus: 1
+      duration: 0.0134011
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1096
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1061
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.IDLE_To_THINK]
+      name: IDLE_To_THINK
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.IDLE_To_THINK
+      resultStatus: 1
+      duration: 0.0004339
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1057
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.OnStartPitching_EnablePitching]
+      name: OnStartPitching_EnablePitching
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.OnStartPitching_EnablePitching
+      resultStatus: 1
+      duration: 0.0008858
+      messages: 
+      output: 'PITCHING
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1056
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1060
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.PitcherStartInIDLEState]
+      name: PitcherStartInIDLEState
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.PitcherStartInIDLEState
+      resultStatus: 1
+      duration: 0.0002864
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1064
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.PITCHING_To_IDLE]
+      name: PITCHING_To_IDLE
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.PITCHING_To_IDLE
+      resultStatus: 1
+      duration: 0.0002714
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1063
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.Pitching_To_Throw]
+      name: Pitching_To_Throw
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.Pitching_To_Throw
+      resultStatus: 1
+      duration: 0.0004003
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1059
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.Test]
+      name: Test
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.Test
+      resultStatus: 1
+      duration: 0.0002484
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1062
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BFPitcherTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.THINK_To_PITCHING]
+      name: THINK_To_PITCHING
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.THINK_To_PITCHING
+      resultStatus: 1
+      duration: 0.0015362
+      messages: 
+      output: 'THINK
+
+        PITCHING
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1059
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+      name: InningManagerTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest
+      resultStatus: 1
+      duration: 0.0158396
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1091
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1060
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.DeffensiveAndOffensiveChangeWhenHalfInningComplete]
+      name: DeffensiveAndOffensiveChangeWhenHalfInningComplete
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.DeffensiveAndOffensiveChangeWhenHalfInningComplete
+      resultStatus: 1
+      duration: 0.0006793
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1064
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.EndOfInningDoesNotResultInWinOrLose]
+      name: EndOfInningDoesNotResultInWinOrLose
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.EndOfInningDoesNotResultInWinOrLose
+      resultStatus: 1
+      duration: 0.0012909
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1063
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInning]
+      name: ExtraInning
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInning
+      resultStatus: 1
+      duration: 0.0003593
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1066
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInningLose]
+      name: ExtraInningLose
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInningLose
+      resultStatus: 1
+      duration: 0.0002774
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1065
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInningWin]
+      name: ExtraInningWin
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInningWin
+      resultStatus: 1
+      duration: 0.0002512
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1068
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.FirstHalfDoesntCompleteInning]
+      name: FirstHalfDoesntCompleteInning
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.FirstHalfDoesntCompleteInning
+      resultStatus: 1
+      duration: 0.0005608
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1061
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.GameHas9Innings]
+      name: GameHas9Innings
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.GameHas9Innings
+      resultStatus: 1
+      duration: 0.0002193
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1067
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.MaxEtraInningsEndTheGame]
+      name: MaxEtraInningsEndTheGame
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.MaxEtraInningsEndTheGame
+      resultStatus: 1
+      duration: 0.0002952
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1062
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.PlayerLose]
+      name: PlayerLose
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.PlayerLose
+      resultStatus: 1
+      duration: 0.0002576
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1061
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.PlayerWin]
+      name: PlayerWin
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.PlayerWin
+      resultStatus: 1
+      duration: 0.000246
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1069
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/InningManagerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.SecondHalfCompleteInning]
+      name: SecondHalfCompleteInning
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.SecondHalfCompleteInning
+      resultStatus: 1
+      duration: 0.0004009
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
+    - id: 1070
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest][suite]
+      name: PlayerSelectTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest
+      resultStatus: 1
+      duration: 0.0089079
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1098
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1071
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/PlayerSelectTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest.Select1Player]
+      name: Select1Player
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest.Select1Player
+      resultStatus: 1
+      duration: 0.0003883
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1070
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest][suite]
+    - id: 1072
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/PlayerSelectTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest.Select2Players]
+      name: Select2Players
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest.Select2Players
+      resultStatus: 1
+      duration: 0.0003296
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1070
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest][suite]
+    - id: 1049
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection][suite]
+      name: TeamSelection
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection
+      resultStatus: 1
+      duration: 0.0106864
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1098
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1051
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/TeamSelection/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection.DisplayListOfTeams]
+      name: DisplayListOfTeams
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection.DisplayListOfTeams
+      resultStatus: 1
+      duration: 0.0002176
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection][suite]
+    - id: 1050
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/TeamSelection/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection.Select1Player]
+      name: Select1Player
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection.Select1Player
+      resultStatus: 1
+      duration: 0.000306
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection][suite]
+    - id: 1054
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TimerTest][suite]
+      name: TimerTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.TimerTest
+      resultStatus: 1
+      duration: 0.0086831
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1088
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1055
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/TimerTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TimerTest.Wait]
+      name: Wait
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.TimerTest.Wait
+      resultStatus: 1
+      duration: 0.001103
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1054
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TimerTest][suite]
+    - id: 1037
+      uniqueId: Edit.dll/Assets/[Game][suite]
+      name: Game
+      fullName: Assets.Game
+      resultStatus: 1
+      duration: 0.0274622
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1036
+      parentUniqueId: Edit.dll/[Assets][suite]
+    - id: 1038
+      uniqueId: Edit.dll/Assets/Game/[Tests][suite]
+      name: Tests
+      fullName: Assets.Game.Tests
+      resultStatus: 1
+      duration: 0.0238291
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/[Game][suite]
+    - id: 1039
+      uniqueId: Edit.dll/Assets/Game/Tests/[Edit][suite]
+      name: Edit
+      fullName: Assets.Game.Tests.Edit
+      resultStatus: 1
+      duration: 0.0207204
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1038
+      parentUniqueId: Edit.dll/Assets/Game/[Tests][suite]
+    - id: 1043
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/[Spec][suite]
+      name: Spec
+      fullName: Assets.Game.Tests.Edit.Spec
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1042
+      parentUniqueId: Edit.dll/Assets/Game/Tests/[Edit][suite]
+    - id: 1044
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay][suite]
+      name: Gameplay
+      fullName: Assets.Game.Tests.Edit.Spec.Gameplay
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1043
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/[Spec][suite]
+    - id: 1027
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest][suite]
+      name: PitchingTest
+      fullName: Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1044
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay][suite]
+    - id: 1040
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/PitchingTest/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest.PitchingResultInStrike]
+      name: PitchingResultInStrike
+      fullName: Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest.PitchingResultInStrike
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest][suite]
+    - id: 1057
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/[Specs][suite]
+      name: Specs
+      fullName: Assets.Game.Tests.Edit.Specs
+      resultStatus: 1
+      duration: 0.01768
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1054
+      parentUniqueId: Edit.dll/Assets/Game/Tests/[Edit][suite]
+    - id: 1071
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/[Gameplay][suite]
+      name: Gameplay
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1070
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/[Specs][suite]
+    - id: 1072
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter][suite]
+      name: Batter
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.Batter
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1071
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/[Gameplay][suite]
+    - id: 1049
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/Batter/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature][suite]
+      name: BatterFeature
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1072
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter][suite]
+    - id: 1050
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/Batter/BatterFeature/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature.TestPressBatButton]
+      name: TestPressBatButton
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature.TestPressBatButton
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/Batter/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature][suite]
+    - id: 1051
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/Batter/BatterFeature/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature.WhenPressMove]
+      name: WhenPressMove
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature.WhenPressMove
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/Batter/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.Batter.BatterFeature][suite]
+    - id: 1037
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+      name: PlayerWinsTest
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest
+      resultStatus: 1
+      duration: 0.005414
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1058
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay][suite]
+    - id: 1041
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.EndOfInningDoesNotResultInWinOrLose]
+      name: EndOfInningDoesNotResultInWinOrLose
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.EndOfInningDoesNotResultInWinOrLose
+      resultStatus: 1
+      duration: 0.0001637
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1040
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.ExtraInning]
+      name: ExtraInning
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.ExtraInning
+      resultStatus: 1
+      duration: 0.0001335
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1043
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.ExtraInningLose]
+      name: ExtraInningLose
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.ExtraInningLose
+      resultStatus: 1
+      duration: 0.0001481
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1042
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.ExtraInningWin]
+      name: ExtraInningWin
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.ExtraInningWin
+      resultStatus: 1
+      duration: 0.0001296
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1044
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.MaxEtraInningsEndTheGame]
+      name: MaxEtraInningsEndTheGame
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.MaxEtraInningsEndTheGame
+      resultStatus: 1
+      duration: 0.0001733
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1039
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.PlayerLose]
+      name: PlayerLose
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.PlayerLose
+      resultStatus: 1
+      duration: 0.0001358
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1038
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/PlayerWinsTest/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.PlayerWin]
+      name: PlayerWin
+      fullName: Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest.PlayerWin
+      resultStatus: 1
+      duration: 0.0001285
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Specs/Gameplay/[Edit][Assets.Game.Tests.Edit.Specs.Gameplay.PlayerWinsTest][suite]
+    - id: 1066
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/[Edit][Assets.Game.Tests.Edit.Unit][suite]
+      name: Unit
+      fullName: Assets.Game.Tests.Edit.Unit
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1065
+      parentUniqueId: Edit.dll/Assets/Game/Tests/[Edit][suite]
+    - id: 1027
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Unit/[Edit][Assets.Game.Tests.Edit.Unit.BatterTest][suite]
+      name: BatterTest
+      fullName: Assets.Game.Tests.Edit.Unit.BatterTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1066
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/[Edit][Assets.Game.Tests.Edit.Unit][suite]
+    - id: 1028
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Unit/BatterTest/[Edit][Assets.Game.Tests.Edit.Unit.BatterTest.TestBat]
+      name: TestBat
+      fullName: Assets.Game.Tests.Edit.Unit.BatterTest.TestBat
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Unit/[Edit][Assets.Game.Tests.Edit.Unit.BatterTest][suite]
+    - id: 1001
+      uniqueId: Edit.dll/[Edit][BatTest][suite]
+      name: BatTest
+      fullName: BatTest
+      resultStatus: 0
+      duration: 0.0030666
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1018
+      parentUniqueId: '[Edit][C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll][suite]'
+    - id: 1002
+      uniqueId: Edit.dll/BatTest/[Edit][BatTest.OnPressLeft_BatMoveToTheLeft]
+      name: OnPressLeft_BatMoveToTheLeft
+      fullName: BatTest.OnPressLeft_BatMoveToTheLeft
+      resultStatus: 0
+      duration: 0.0071672
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][BatTest][suite]
+    - id: 1003
+      uniqueId: Edit.dll/BatTest/[Edit][BatTest.OnPressRight_BatMoveToTheRight]
+      name: OnPressRight_BatMoveToTheRight
+      fullName: BatTest.OnPressRight_BatMoveToTheRight
+      resultStatus: 0
+      duration: 0.000353
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][BatTest][suite]
+    - id: 1003
+      uniqueId: Edit.dll/BatTest/[Edit][BatTest.OnReachLeftLimit_BaterStop]
+      name: OnReachLeftLimit_BaterStop
+      fullName: BatTest.OnReachLeftLimit_BaterStop
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][BatTest][suite]
+    - id: 1001
+      uniqueId: Edit.dll/[Edit][GameplayTest][suite]
+      name: GameplayTest
+      fullName: GameplayTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: '[Edit][C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll][suite]'
+    - id: 1003
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.OnBatHit_EnterFlyState]
+      name: OnBatHit_EnterFlyState
+      fullName: GameplayTest.OnBatHit_EnterFlyState
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1002
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.When_ShowGameplay]
+      name: When_ShowGameplay
+      fullName: GameplayTest.When_ShowGameplay
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1014
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenBallHitWall_Rebound]
+      name: WhenBallHitWall_Rebound
+      fullName: GameplayTest.WhenBallHitWall_Rebound
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1009
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenBatTouchBall_ChangeToHitState]
+      name: WhenBatTouchBall_ChangeToHitState
+      fullName: GameplayTest.WhenBatTouchBall_ChangeToHitState
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1012
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenHit_Fly]
+      name: WhenHit_Fly
+      fullName: GameplayTest.WhenHit_Fly
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1013
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenHitGround_Rebound]
+      name: WhenHitGround_Rebound
+      fullName: GameplayTest.WhenHitGround_Rebound
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1007
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenPitcherFinishSwing_BallIsOut]
+      name: WhenPitcherFinishSwing_BallIsOut
+      fullName: GameplayTest.WhenPitcherFinishSwing_BallIsOut
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1008
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenPlayerMoveX_BatMoveX]
+      name: WhenPlayerMoveX_BatMoveX
+      fullName: GameplayTest.WhenPlayerMoveX_BatMoveX
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1015
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenRunnerGetHome_AnnotateRun]
+      name: WhenRunnerGetHome_AnnotateRun
+      fullName: GameplayTest.WhenRunnerGetHome_AnnotateRun
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1011
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenRunnerReach1stBase_RunnerStop]
+      name: WhenRunnerReach1stBase_RunnerStop
+      fullName: GameplayTest.WhenRunnerReach1stBase_RunnerStop
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1010
+      uniqueId: Edit.dll/GameplayTest/[Edit][GameplayTest.WhenStartHitState_BatRunsTo1stBase]
+      name: WhenStartHitState_BatRunsTo1stBase
+      fullName: GameplayTest.WhenStartHitState_BatRunsTo1stBase
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameplayTest][suite]
+    - id: 1008
+      uniqueId: Edit.dll/[Edit][GameStatesTest][suite]
+      name: GameStatesTest
+      fullName: GameStatesTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1021
+      parentUniqueId: '[Edit][C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll][suite]'
+    - id: 1009
+      uniqueId: Edit.dll/GameStatesTest/[Edit][GameStatesTest.WhenGameInit_ShowElements]
+      name: WhenGameInit_ShowElements
+      fullName: GameStatesTest.WhenGameInit_ShowElements
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: Edit.dll/[Edit][GameStatesTest][suite]
+    - id: 1001
+      uniqueId: Edit.dll/[Edit][GameTest][suite]
+      name: GameTest
+      fullName: GameTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[Edit][C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll][suite]'
+    - id: 1005
+      uniqueId: Edit.dll/GameTest/[Edit][GameTest.AfterStatsSceneDelay_StartBatView]
+      name: AfterStatsSceneDelay_StartBatView
+      fullName: GameTest.AfterStatsSceneDelay_StartBatView
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][GameTest][suite]
+    - id: 1004
+      uniqueId: Edit.dll/GameTest/[Edit][GameTest.OnPitcherSelected_OpenStatsScene]
+      name: OnPitcherSelected_OpenStatsScene
+      fullName: GameTest.OnPitcherSelected_OpenStatsScene
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][GameTest][suite]
+    - id: 1002
+      uniqueId: Edit.dll/GameTest/[Edit][GameTest.OnStartGame_ShowMenuAnimation]
+      name: OnStartGame_ShowMenuAnimation
+      fullName: GameTest.OnStartGame_ShowMenuAnimation
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][GameTest][suite]
+    - id: 1003
+      uniqueId: Edit.dll/GameTest/[Edit][GameTest.OnTeamSelected_OpenSelectYourPitcher]
+      name: OnTeamSelected_OpenSelectYourPitcher
+      fullName: GameTest.OnTeamSelected_OpenSelectYourPitcher
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Edit.dll/[Edit][GameTest][suite]
+    - id: 1005
+      uniqueId: Edit.dll/[Edit][GameTest+Select1P][suite]
+      name: GameTest+Select1P
+      fullName: GameTest+Select1P
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[Edit][C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll][suite]'
+    - id: 1007
+      uniqueId: Edit.dll/GameTest+Select1P/[Edit][GameTest+Select1P.OnSelect1P_OpenSelectYourTeam]
+      name: OnSelect1P_OpenSelectYourTeam
+      fullName: GameTest+Select1P.OnSelect1P_OpenSelectYourTeam
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameTest+Select1P][suite]
+    - id: 1006
+      uniqueId: Edit.dll/GameTest+Select1P/[Edit][GameTest+Select1P.OnSelect1P_Select1Player]
+      name: OnSelect1P_Select1Player
+      fullName: GameTest+Select1P.OnSelect1P_Select1Player
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Edit.dll/[Edit][GameTest+Select1P][suite]
+    - id: 1006
+      uniqueId: Edit.dll/[Edit][GameTest+Select2P][suite]
+      name: GameTest+Select2P
+      fullName: GameTest+Select2P
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: '[Edit][C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll][suite]'
+    - id: 1008
+      uniqueId: Edit.dll/GameTest+Select2P/[Edit][GameTest+Select2P.OnSelect2P_OpenSelectYourTeam]
+      name: OnSelect2P_OpenSelectYourTeam
+      fullName: GameTest+Select2P.OnSelect2P_OpenSelectYourTeam
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: Edit.dll/[Edit][GameTest+Select2P][suite]
+    - id: 1007
+      uniqueId: Edit.dll/GameTest+Select2P/[Edit][GameTest+Select2P.OnSelect2P_Select2PlayersMode]
+      name: OnSelect2P_Select2PlayersMode
+      fullName: GameTest+Select2P.OnSelect2P_Select2PlayersMode
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: Edit.dll/[Edit][GameTest+Select2P][suite]
+    m_ResultText: Unit (0.114s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 9f1da127
+      m_LastClickedID: 664870303
+      m_ExpandedIDs: 543d09986ff1c79d2e4dd49f88e7bea09cd376b35f29b4b7bdaff3c3ed1e2fd0144d2ad82a72b7f4b2513301b0efbb06380ea10ed7370a1581393c1cee9f141f9f1da127f923e52837e4a2333f4f0837bda3694da6f225581e3a625ec5a8306fed84986fffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized

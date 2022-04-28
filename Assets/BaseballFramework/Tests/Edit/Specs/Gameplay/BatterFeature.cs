@@ -13,12 +13,17 @@ namespace Assets.Game.Tests.Edit.Specs.Gameplay.Batter
         {
             bool isSwinging = false;
             var batter = new BFBatter();
-            var batterHumanController = new BatterHumanController();
+            var player1InputController = new BFInputController();
+            var batterHumanController = new BatterHumanController(player1InputController);
             batterHumanController.SetBatter(batter);
             batter.startSwingAnimation = () => isSwinging = true;
 
+            // batter should be in human idle state
+            // batter.SetState(batter.idleState);
+
             // when
-            batterHumanController.PressBat();
+            player1InputController.buttonB = true;
+            batter.Update(0);
 
             // then StartSwing event was called
             Assert.IsTrue(isSwinging, "Batter should swing the bat");
@@ -33,40 +38,85 @@ namespace Assets.Game.Tests.Edit.Specs.Gameplay.Batter
         {
             Vector3 m = Vector3.zero;
             var batter = new BFBatter();
-            var batterHumanController = new BatterHumanController();
+            var batterHumanController = new BatterHumanController(new BFInputController());
             batterHumanController.SetBatter(batter);
             batter.onMove = (Vector3 movement) => { m = movement; };
 
             // when
-            batterHumanController.MoveAxis(new Vector3(0, 1, 0));
+            batterHumanController.inputController.dPadUp = false;
+            batter.Update(0);
+            Assert.AreEqual(m.y, 0, "Batter should not move");
 
+            batterHumanController.inputController.dPadUp = true;
+            batter.Update(0);
             // then StartSwing event was called
             Assert.AreEqual(m.y, 1, "Batter should swing the bat");
         }
 
-
+        [Test]
         // when game is in batting state
-        public void AllowBattingInBattingMode()
+        public void AllowBattingInBattingState()
         {
             bool isSwinging = false;
             var game = new BFGame();
             var batter = new BFBatter();
-            var batterHumanController = new BatterHumanController();
+            var inputController = new BFInputController();
+            var batterHumanController = new BatterHumanController(inputController);
             batterHumanController.SetBatter(batter);
-            batter.startSwingAnimation = () => isSwinging = true;
+            game.SetState(GameState.BattingAndPitching);
 
-            // when
-            game.state = GameState.BattingAndPitching;
-            // And
-            batterHumanController.PressBat();
+            // when buttonA is pressed
+            inputController.buttonA = true;
+            // and game updates
+            game.Update(0);
 
             // then StartSwing event was called
+            Assert.IsTrue(isSwinging, "Batter should swing the bat");
+        }
+
+        [Test]
+        // when game is in batting state
+        public void ButtonA_NotPressed_DontStartBatAnimation()
+        {
+            bool isSwinging = false;
+            var game = new BFGame();
+            var batter = new BFBatter();
+            var inputController = new BFInputController();
+            var batterHumanController = new BatterHumanController(inputController);
+            batterHumanController.SetBatter(batter);
+            game.SetState(GameState.BattingAndPitching);
+
+            // when buttonA is pressed
+            inputController.buttonA = false;
+            // and game updates
+            game.Update(0);
+
+            // then StartSwing event was not called
             Assert.IsFalse(isSwinging, "Batter should not swing the bat");
         }
 
         // when game is not in batting state
+        [Test]
+        public void WhenGameIsNotInBattingAndPitchingState_DontProcessControllers()
+        {
+            bool isSwinging = false;
+            var game = new BFGame();
+            var batter = new BFBatter();
+            var inputController = new BFInputController();
+            var batterHumanController = new BatterHumanController(inputController);
+            batterHumanController.SetBatter(batter);
+            batter.startSwingAnimation = () => isSwinging = true;
+            game.SetState(GameState.Strike);
+
+            // when buttonA is pressed
+            inputController.buttonA = true;
+            // and game updates
+            game.Update(0);
+
+            // then StartSwing event was not called
+            Assert.IsFalse(isSwinging, "Batter should not swing the bat");
+        }
 
         // when batter is CPU don't effect any action
     }
-
 }
