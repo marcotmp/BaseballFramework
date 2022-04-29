@@ -1,33 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MarcoTMP.BaseballFramework.Core.PitcherStates.AI
 {
     public class AIPitcherThinkingState : PitcherState
     {
-        public int delayTime;
+        public Func<float> GetDelayTime = () => UnityEngine.Random.Range(1, 5);
         private Timer timer;
 
         public AIPitcherThinkingState()
         {
             timer = new Timer();
         }
-
+        
         public override void Enter()
         {
             base.Enter();
-            timer.Reset(delayTime);
+            timer.Reset(GetDelayTime());
+            pitcher.ThinkingAnimation();
         }
-
+        
         public override void Update(float dt)
         {
             base.Update(dt);
-            
+
             if (timer.Tick(dt))
-                fsm.ChangeStateByType<AIPitcherPitchingState>();
+                fsm.ChangeStateByName(PitcherState.Pitching);
         }
     }
 }

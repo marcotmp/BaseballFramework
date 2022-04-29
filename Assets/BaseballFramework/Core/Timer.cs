@@ -8,7 +8,7 @@ namespace MarcoTMP.BaseballFramework.Core
 {
     public class Timer
     {
-        public int duration = 1;
+        public float duration = 1;
         public float timeElapsed { get; private set; } = 0;
 
         public bool Tick(float dt)
@@ -17,7 +17,7 @@ namespace MarcoTMP.BaseballFramework.Core
             return timeElapsed >= duration;
         }
 
-        public void Reset(int duration)
+        public void Reset(float duration)
         {
             timeElapsed = 0;
             this.duration = duration;

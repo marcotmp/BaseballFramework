@@ -164,7 +164,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         {
             var fsm = new FakeFiniteStateMachine<BFPitcher>();
             var state = new AIPitcherThinkingState();
-            state.delayTime = 1;
+            state.GetDelayTime = () => 1;
             state.fsm = fsm;
             state.Enter();
 

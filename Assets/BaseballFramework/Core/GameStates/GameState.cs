@@ -10,6 +10,10 @@ namespace MarcoTMP.BaseballFramework.Core.GameStates
 {
     public class GameState : StateBase<BFGame>
     {
-        public BFGame game => fsm.owner;
+        public BFGame game
+        {
+            get => fsm.owner;
+            set { fsm.owner = value; }
+        }
     }
 }

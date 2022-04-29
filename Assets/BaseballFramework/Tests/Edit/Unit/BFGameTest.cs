@@ -31,14 +31,14 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
             FakeFiniteStateMachine<BFGame> fsm = new FakeFiniteStateMachine<BFGame>();
             var state = new BattingAndPitchingState();
             fsm.AddState(state);
-            //BFGame.FSMFactory = () => fsm;
             var game = new BFGame();
             game.SetFSM(fsm);
             game.defaultState = state;
 
             game.Start();
 
-            Assert.AreEqual(typeof(BattingAndPitchingState), fsm.changeStateByTypeCalledWithParamU);
+            Assert.AreEqual(state, fsm.changeStateCalledWithParamNewState);
+            //Assert.AreEqual(typeof(BattingAndPitchingState), fsm.changeStateByTypeCalledWithParamU);
         }
 
         [Test]

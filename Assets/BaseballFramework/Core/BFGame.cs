@@ -16,11 +16,12 @@ namespace MarcoTMP.BaseballFramework.Core
         void InitPitching();
         void FinishPitching();
         bool CheckIsStrikeOut();
-        bool CheckIsStrike();
         void HandleBattingAndPitching(float dt);
         bool CheckIsBall();
         bool CheckIsHit();
         bool CheckStealBase();
+
+        bool IsStrike { get; set; }
     }
 
     public class BFGame : IPitchingRules // 9InningBasballSimulation
@@ -39,13 +40,13 @@ namespace MarcoTMP.BaseballFramework.Core
         public BFInputController player1InputController = new BFInputController();
         
         public FiniteStateMachine<BFGame> fsm { get; private set; }
+        public bool IsStrike { get; set; } = false;
+        public GameStates.GameState defaultState;
 
         public BFGame()
         {
             fsm = FSMFactory();
         }
-
-
 
         public void SetFSM(FiniteStateMachine<BFGame> fsm)
         {
@@ -93,33 +94,6 @@ namespace MarcoTMP.BaseballFramework.Core
             competitors.visitor = new CompetingTeam { type = CompetingType.Human };
         }
 
-        [Obsolete]
-        public void SetState(GameState newState)
-        {
-            this.state = newState;
-
-            if (newState == GameState.Strike)
-            {
-                listener?.ShowStrikeMessage();
-            }
-            else
-            {
-                pitcherActor.onReleaseBall = () =>
-                {
-                    ballActor.MoveTo("Home");
-                };
-                pitcherActor.StartPitching();
-            }
-        }
-
-        public void BallTouchHome()
-        {
-            isStrike = true;
-            // select strike or strikeout
-            //fsm.ChangeStateByType<StrikeState>();
-            SetState(GameState.Strike);
-            
-        }
 
         public void SetListener(IGameListener listener)
         {
@@ -131,7 +105,9 @@ namespace MarcoTMP.BaseballFramework.Core
             batterActor.Enable();
             pitcherActor.Enable();
 
-            isStrike = false;
+            ballActor.ResetPosition();
+
+            IsStrike = false;
 
             // this might go into batting and pitching state
             pitcherActor.onReleaseBall = () =>
@@ -141,7 +117,7 @@ namespace MarcoTMP.BaseballFramework.Core
 
             catcherActor.OnBallCatched = () =>
             {
-                isStrike = true;
+                IsStrike = true;
             };
         }
 
@@ -151,17 +127,9 @@ namespace MarcoTMP.BaseballFramework.Core
             pitcherActor.Disable();
         }
 
-        private bool isStrike = false;
-        public GameStates.GameState defaultState;
-
         public bool CheckIsStrikeOut()
         {
             return false;
-        }
-
-        public bool CheckIsStrike()
-        {
-            return isStrike;
         }
 
         public void HandleBattingAndPitching(float dt)
@@ -184,10 +152,22 @@ namespace MarcoTMP.BaseballFramework.Core
         {
             return false;
         }
+
+        virtual public void ShowStrikeMessage()
+        {
+            listener.ShowStrikeMessage();
+        }
+
+        virtual public void HideStrikeMessage()
+        {
+            listener.HideStrikeMessage();
+        }
+
     }
 
     public interface IGameListener
     {
+        void HideStrikeMessage();
         void ShowStrikeMessage();
     }
 

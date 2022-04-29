@@ -1,9 +1,6 @@
-﻿using MarcoTMP.BaseballFramework.Core.States;
+﻿using MarcoTMP.BaseballFramework.Core.PitcherStates;
+using MarcoTMP.BaseballFramework.Core.States;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace MarcoTMP.BaseballFramework.Core
@@ -12,14 +9,21 @@ namespace MarcoTMP.BaseballFramework.Core
     {
         public string state = "IDLE";
         public Action OnStartPitchingAnim { get; set; }
-        private Timer timer = new Timer();
+        public Action DoThinkingAnimation { get; set; }
+        public Action onGrabBall;
         public Action onReleaseBall;
         public bool isActive;
+        public Func<float> GetDuration = ()=> UnityEngine.Random.Range(1, 5);
+        
         private FiniteStateMachine<BFPitcher> fsm;
+        private Timer timer = new Timer();
 
         internal void Enable()
         {
             isActive = true;
+
+            // set default state
+            fsm.SetDefaultState();
         }
 
         internal void Disable()
@@ -29,18 +33,11 @@ namespace MarcoTMP.BaseballFramework.Core
         virtual public void Update(float dt)
         {
             fsm.Update(dt);
-            
+        }
 
-            if (state == "THINK")
-            {
-                bool isDone = timer.Tick(dt);
-                if (isDone)
-                {
-                    state = "PITCHING";
-                    OnStartPitchingAnim?.Invoke();
-                }
-            }
-            //Debug.Log(state);
+        public void ThinkingAnimation()
+        {
+            DoThinkingAnimation?.Invoke();
         }
 
         public void StartPitching()
@@ -51,7 +48,7 @@ namespace MarcoTMP.BaseballFramework.Core
         public void Think()
         {
             state = "THINK";
-            timer.duration = 1;
+            timer.duration = GetDuration();
         }
 
         public void SetBrain(FiniteStateMachine<BFPitcher> pitcherBrain)

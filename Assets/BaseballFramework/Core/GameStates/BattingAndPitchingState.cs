@@ -20,7 +20,7 @@ namespace MarcoTMP.BaseballFramework.Core.GameStates
 
         override public void Update(float dt)
         {
-            pitchingRules.HandleBattingAndPitching(dt);          
+            pitchingRules.HandleBattingAndPitching(dt);
 
             // StrikeOut
             //if (gameRules.CheckIsStrikeOut())
@@ -28,7 +28,7 @@ namespace MarcoTMP.BaseballFramework.Core.GameStates
             //if (checkIsStrikeOut())
                 fsm.ChangeStateByType<StrikeOutState>();
             // Strike
-            else if (pitchingRules.CheckIsStrike())
+            else if (pitchingRules.IsStrike)
             //else if (checkIsStrike())
                 fsm.ChangeStateByType<StrikeState>();
             else if (pitchingRules.CheckIsBall())

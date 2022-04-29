@@ -10,11 +10,5 @@ namespace MarcoTMP.BaseballFramework.Core.PitcherStates.AI
 
             pitcher.OnStartPitchingAnim?.Invoke();
         }
-
-        public override void Update(float dt)
-        {
-            base.Update(dt);
-
-        }
     }
 }

@@ -8,11 +8,17 @@ namespace MarcoTMP.BaseballFramework.Core
 {
     public class BFBall
     {
+        public Action onReset;
         public string moveTo;
 
         public void MoveTo(string where)
         {
             moveTo = where;
+        }
+
+        internal void ResetPosition()
+        {
+            onReset?.Invoke();
         }
     }
 }

@@ -14,11 +14,15 @@ namespace MarcoTMP.BaseballFramework.Core.States
         protected IState<T> currentState;
         private Dictionary<Type, IState<T>> typeDict;
         private Dictionary<string, IState<T>> stringDict;
+        private IState<T> initialState;
+
         public T owner { get; set; }
 
         public FiniteStateMachine() 
         {
             typeDict = new Dictionary<Type, IState<T>>();
+            stringDict = new Dictionary<string, IState <T>>();
+
         }
 
         public FiniteStateMachine(T owner = default)
@@ -34,9 +38,11 @@ namespace MarcoTMP.BaseballFramework.Core.States
         }
 
 
-        public void AddStateWithName(string stateName, IState<T> state)
+        public void AddState(string stateName, IState<T> state)
         {
             stringDict.Add(stateName, state);
+            typeDict.Add(state.GetType(), state);
+            state.fsm = this;
         }
 
         public void ChangeStateByName(string name)
@@ -46,6 +52,17 @@ namespace MarcoTMP.BaseballFramework.Core.States
                 ChangeToState(stringDict[name]);
             else
                 Debug.Log($"Can't find {name}");
+        }
+
+        public void SetInitialState(string name)
+        {
+            if (stringDict.ContainsKey(name))
+            initialState = stringDict[name];
+        }
+
+        public void SetDefaultState()
+        {
+            ChangeToState(initialState);
         }
 
         virtual public void ChangeStateByType<U>()
@@ -60,6 +77,7 @@ namespace MarcoTMP.BaseballFramework.Core.States
 
         virtual public void ChangeToState(IState<T> newState)
         {
+            //Debug.Log($"new state {newState}");
             currentState?.Exit();
             currentState = newState;
             currentState?.Enter();

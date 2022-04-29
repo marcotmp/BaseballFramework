@@ -5,6 +5,7 @@ using MarcoTMP.BaseballFramework.Core.States;
 using UnityEngine;
 using MarcoTMP.BaseballFramework.Core.PitcherStates.AI;
 using MarcoTMP.BaseballFramework.Core.GameStates;
+using MarcoTMP.BaseballFramework.Core.PitcherStates;
 
 public class GameManager : MonoBehaviour, IGameListener
 {
@@ -26,15 +27,6 @@ public class GameManager : MonoBehaviour, IGameListener
     // Start is called before the first frame update
     void Start()
     {
-        // create an AI Pitcher 
-        var _pitcher = new BFPitcher();
-        var pitcherBrain = new FiniteStateMachine<BFPitcher>();
-        //pitcherBrain.AddState(new AIPitcherIdleState());
-        pitcherBrain.AddState(new AIPitcherThinkingState());
-        pitcherBrain.AddState(new AIPitcherPitchingState());        
-        pitcherBrain.ChangeStateByType<AIPitcherThinkingState>();
-        _pitcher.SetBrain(pitcherBrain);
-
         // Setup batter
         var _batter = new BFBatter();
         var inputController = new BFInputController();
@@ -52,7 +44,7 @@ public class GameManager : MonoBehaviour, IGameListener
         var _catcher = new BFCatcher();
 
         game = new BFGame();
-        game.pitcherActor = _pitcher;
+        game.pitcherActor = CreateAIPitcher();
         game.batterActor = _batter;
         game.ballActor = _ball;
         game.catcherActor = _catcher;
@@ -107,12 +99,22 @@ public class GameManager : MonoBehaviour, IGameListener
         strike.SetActive(true);
     }
 
-    private FiniteStateMachine<BFBatter> GetHumanBatterBrain(BFInputController input)
+    public void HideStrikeMessage()
     {
-        var fsm = new FiniteStateMachine<BFBatter>();
-        fsm.AddState(new HumanIdle(input));
-        fsm.AddState(new HumanMove());
-        fsm.AddState(new BatterSwing());
-        return fsm;
+        strike.SetActive(false);
+    }
+
+    public BFPitcher CreateAIPitcher()
+    {
+        var _pitcher = new BFPitcher();
+        var pitcherBrain = new FiniteStateMachine<BFPitcher>();
+        
+        pitcherBrain.AddState(PitcherState.Thinking, new AIPitcherThinkingState());
+        pitcherBrain.AddState(PitcherState.Pitching, new AIPitcherPitchingState());
+        pitcherBrain.SetInitialState(PitcherState.Thinking);
+        
+        _pitcher.SetBrain(pitcherBrain);
+
+        return _pitcher;
     }
 }

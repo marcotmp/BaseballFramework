@@ -11,6 +11,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Helpers
     {
         public Type changeStateByTypeCalledWithParamU;
         public bool isUpdateCalled;
+        public IState<T> changeStateCalledWithParamNewState;
 
         public FakeFiniteStateMachine()
         {
@@ -18,7 +19,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Helpers
 
         public override void ChangeToState(IState<T> newState)
         {
-            //base.ChangeToState(newState);
+            changeStateCalledWithParamNewState = newState;
             currentState = newState;
         }
 

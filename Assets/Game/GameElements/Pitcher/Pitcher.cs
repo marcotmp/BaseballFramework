@@ -17,6 +17,11 @@ public class Pitcher : MonoBehaviour
             Debug.Log("Animator Start Pitching");
             Invoke(nameof(Anim_OnReleaseBall), 1);
         };
+
+        pitcher.DoThinkingAnimation = ()=>
+        {
+            Debug.Log("Think Animation");
+        };
     }
 
     public void Anim_OnReleaseBall()

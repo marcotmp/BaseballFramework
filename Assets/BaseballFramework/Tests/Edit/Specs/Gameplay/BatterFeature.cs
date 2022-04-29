@@ -63,7 +63,6 @@ namespace Assets.Game.Tests.Edit.Specs.Gameplay.Batter
             var inputController = new BFInputController();
             var batterHumanController = new BatterHumanController(inputController);
             batterHumanController.SetBatter(batter);
-            game.SetState(GameState.BattingAndPitching);
 
             // when buttonA is pressed
             inputController.buttonA = true;
@@ -84,7 +83,6 @@ namespace Assets.Game.Tests.Edit.Specs.Gameplay.Batter
             var inputController = new BFInputController();
             var batterHumanController = new BatterHumanController(inputController);
             batterHumanController.SetBatter(batter);
-            game.SetState(GameState.BattingAndPitching);
 
             // when buttonA is pressed
             inputController.buttonA = false;
@@ -106,7 +104,6 @@ namespace Assets.Game.Tests.Edit.Specs.Gameplay.Batter
             var batterHumanController = new BatterHumanController(inputController);
             batterHumanController.SetBatter(batter);
             batter.startSwingAnimation = () => isSwinging = true;
-            game.SetState(GameState.Strike);
 
             // when buttonA is pressed
             inputController.buttonA = true;

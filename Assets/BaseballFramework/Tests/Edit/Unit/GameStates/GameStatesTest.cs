@@ -5,7 +5,7 @@ using NSubstitute;
 using NUnit.Framework;
 using System;
 
-namespace Assets.BaseballFramework.Tests.Edit.Unit
+namespace Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest
 {
     //public class GameStates
     //{
@@ -61,7 +61,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         [Test]
         public void WhenStrike_StrikeState()
         {
-            pitchingRules.CheckIsStrike().Returns(true);
+            pitchingRules.IsStrike.Returns(true);
 
             battingState.Update(0);
 
@@ -115,13 +115,53 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         [Test]
         public void WhenEnterStrikeState_CallShowStrike()
         {
+            var strike = new StrikeState();
+            var game = Substitute.For<BFGame>();
+            strike.fsm = Substitute.For<FiniteStateMachine<BFGame>>();
+            strike.game = game;
+
+            strike.Enter();
+
+            game.Received().ShowStrikeMessage();
+        }
+
+        [Test]
+        public void GameDispatchMessageToTheOutside()
+        {
             var game = new BFGame();
             var listener = Substitute.For<IGameListener>();
             game.SetListener(listener);
-            //game.SetState(GameState.Strike);
-
+            
+            game.ShowStrikeMessage();
+            
             listener.Received().ShowStrikeMessage();
         }
+
+        [Test]
+        public void WaitAFewSeconds_ThenGoToBattingAndPitching()
+        {
+            var strike = new StrikeState();
+            var fsm = Substitute.For<FiniteStateMachine<BFGame>>();
+            strike.fsm = fsm;
+
+            strike.Update(1);
+
+            fsm.Received().ChangeStateByType<BattingAndPitchingState>();
+        }
+
+        [Test]
+        public void WhenExitStrike_HideMessage()
+        {
+            var strike = new StrikeState();
+            var game = Substitute.For<BFGame>();
+            strike.fsm = Substitute.For<FiniteStateMachine<BFGame>>();
+            strike.game = game;
+
+            strike.Exit();
+
+            game.Received().HideStrikeMessage();
+        }
+
     }
 
     public class FakeFiniteStateMachine : FiniteStateMachine<BFGame>
