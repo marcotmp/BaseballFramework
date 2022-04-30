@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using MarcoTMP.BaseballFramework.Core;
+using NUnit.Framework;
 using System;
 
 namespace Assets.Game.Tests.Edit.Spec.Gameplay
@@ -12,6 +13,7 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
             var pitcher = new Pitcher();
             var ball = new Ball();
             var ampayer = new Ampayer();
+            var catcher = new Catcher();
 
             game.ball = ball;
             game.pitcher = pitcher;
@@ -38,24 +40,33 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
             ball.MoveTo("Home");//.WasCalled();
 
             //When pelota toca al home
-            game.Touch(ball, game.bases.home);
+            catcher.CatchTheBall();
 
             //Then ampayer canta strike
             ampayer.Say("Strike");//.WasCalled();
         }
+
 	}
+
+    
 
     public class Game
     {
         internal Bases bases;
         internal Ball ball;
         internal Pitcher pitcher;
+        public Catcher catcher;
 
         public Game()
         {
             pitcher.onReleaseBall = () => {
                 ball.MoveTo("Home");
             };
+
+            //catcher.onCatchBall = () =>
+            //{
+            //    //strike++;
+            //};
         }
 
         internal void SetState(string v)
@@ -116,6 +127,14 @@ namespace Assets.Game.Tests.Edit.Spec.Gameplay
     public class Bases
     {
         public string home;
+    }
+
+    public class Catcher
+    {
+        internal void CatchTheBall()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 82
+  controlID: 111
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 83
+  controlID: 112
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 84
+  controlID: 113
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     y: 0
     width: 185
     height: 432
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -243,8 +243,8 @@ MonoBehaviour:
     y: 432
     width: 774
     height: 299
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 0
     width: 347
     height: 731
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 36bafeffbac0feff14c3feff26c6feffe0c8feffbccafeffd0d8feff98d9feffa8dffeff1ce0feff8ce0feff9eebfeffceebfeff94eefeff00f3feff3af4feffe0f7feffdef9feff3efafeff9efafeff2600ffff5e01ffffcc01ffff2c02ffff9406ffffc406fffff60affff200cffff4a0dffff460fffff2c12ffff8a14ffff0615ffff301cffff901cffff421effff841ffffffa1fffff0221ffffc225ffff8a26fffff626ffff6227ffffca27ffffce29ffff042bffff7a3bffffa63bffff2646ffff6246ffffd661ffff1262ffff5c63ffffc463fffff664ffff2066ffff4c67ffff6672ffff8a72ffffbc73ffff6e75ffff227dffffd87fffff3a81ffff7682ffffe082ffff4083ffff1885fffff286ffff0288ffff1289ffffea8affff8493ffffb698ffffd698ffffc49affffee9bffff189dffff429effff7a9fffffb0a0ffffe6a4ffff48a6ffff84bbffffcebcffff3ebdffff9ebdffff16beffff50bfffff6ec1ffff82c3ffffbcc4ffff7acaffffa4cbffffceccffff48cfffff7ed0ffffaad1ffff22d2ffff0cd4ffff56d5ffff88d6ffff74d8ffff9ed9ffff16daffff7edaffffe0e5ffff48e6ffff32ebffff5cecffffb2efffffeef2ffff18f4ffff42f5ffff18faffff16fbffffc0990000349a000028a1000032a10000a6a10000
+      m_SelectedIDs: 8e7a0000
+      m_LastClickedID: 31374
+      m_ExpandedIDs: fccfffff28d0ffff52d1ffffb2d1ffff54d9ffffa2daffffccdbfffff8dcffff22deffff54dfffff80e0ffffb0e1ffff50e3ffff94e4fffface5ffff28e7ffff52e9ffff8eeaffffc8eefffff4efffff94f6ffff06f7ffff16fbffff027b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -835,7 +835,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: da550000
     m_LastClickedID: 21978
-    m_ExpandedIDs: 000000007c5500007e5500008055000082550000845500008655000088550000
+    m_ExpandedIDs: 000000008455000086550000885500008a5500008c5500008e55000090550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -863,7 +863,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c5500007e5500008055000082550000845500008655000088550000
+    m_ExpandedIDs: 000000008455000086550000885500008a5500008c5500008e55000090550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1083,9 +1083,9 @@ MonoBehaviour:
       uniqueId: '[Baseball][suite]'
       name: Baseball
       fullName: Baseball
-      resultStatus: 2
-      duration: 2.77123
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2300197
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1099,9 +1099,9 @@ MonoBehaviour:
       uniqueId: '[Edit.dll][suite]'
       name: Edit.dll
       fullName: C:/Dev/Repositories/Baseball/Library/ScriptAssemblies/Edit.dll
-      resultStatus: 2
-      duration: 2.7246287
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1871699
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1115,9 +1115,9 @@ MonoBehaviour:
       uniqueId: Edit.dll/[Assets][suite]
       name: Assets
       fullName: Assets
-      resultStatus: 2
-      duration: 2.722342
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.185039
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1131,9 +1131,9 @@ MonoBehaviour:
       uniqueId: Edit.dll/Assets/[BaseballFramework][suite]
       name: BaseballFramework
       fullName: Assets.BaseballFramework
-      resultStatus: 2
-      duration: 2.7201679
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1829246
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1147,9 +1147,9 @@ MonoBehaviour:
       uniqueId: Edit.dll/Assets/BaseballFramework/[Tests][suite]
       name: Tests
       fullName: Assets.BaseballFramework.Tests
-      resultStatus: 2
-      duration: 2.7171264
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1756552
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1163,9 +1163,9 @@ MonoBehaviour:
       uniqueId: Edit.dll/Assets/BaseballFramework/Tests/[Edit][suite]
       name: Edit
       fullName: Assets.BaseballFramework.Tests.Edit
-      resultStatus: 2
-      duration: 2.713509
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1742085
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1244,9 +1244,9 @@ MonoBehaviour:
       uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
       name: Unit
       fullName: Assets.BaseballFramework.Tests.Edit.Unit
-      resultStatus: 2
-      duration: 2.7094922
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1695228
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1261,7 +1261,7 @@ MonoBehaviour:
       name: AIPitcherControllerTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest
       resultStatus: 2
-      duration: 0.4125224
+      duration: 0.0372594
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1277,7 +1277,7 @@ MonoBehaviour:
       name: IDLE_To_THINK
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.IDLE_To_THINK
       resultStatus: 1
-      duration: 0.2628763
+      duration: 0.0133691
       messages: 
       output: 
       stacktrace: 
@@ -1294,7 +1294,7 @@ MonoBehaviour:
       name: PitcherStartInIDLEState
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.PitcherStartInIDLEState
       resultStatus: 1
-      duration: 0.0003524
+      duration: 0.0004404
       messages: 
       output: 
       stacktrace: 
@@ -1311,7 +1311,7 @@ MonoBehaviour:
       name: PITCHING_To_IDLE
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.PITCHING_To_IDLE
       resultStatus: 1
-      duration: 0.0002878
+      duration: 0.0003877
       messages: 
       output: 
       stacktrace: 
@@ -1328,7 +1328,7 @@ MonoBehaviour:
       name: Test
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.Test
       resultStatus: 1
-      duration: 0.0020978
+      duration: 0.0022397
       messages: 
       output: 
       stacktrace: 
@@ -1345,7 +1345,7 @@ MonoBehaviour:
       name: THINK_To_PITCHING
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.AIPitcherControllerTest.THINK_To_PITCHING
       resultStatus: 2
-      duration: 0.0040734
+      duration: 0.0040584
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
@@ -1370,7 +1370,7 @@ MonoBehaviour:
       name: BallTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BallTest
       resultStatus: 1
-      duration: 0.0086221
+      duration: 0.009792
       messages: 
       output: 
       stacktrace: 
@@ -1386,7 +1386,7 @@ MonoBehaviour:
       name: Test
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BallTest.Test
       resultStatus: 1
-      duration: 0.0003045
+      duration: 0.0004909
       messages: 
       output: 
       stacktrace: 
@@ -1398,113 +1398,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1056
       parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BallTest][suite]
-    - id: 1073
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest][suite]
-      name: BattingAndPitchingStateTest
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest
-      resultStatus: 1
-      duration: 2.1519341
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1117
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
-    - id: 1075
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.OnBall_ChangeToBall]
-      name: OnBall_ChangeToBall
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.OnBall_ChangeToBall
-      resultStatus: 1
-      duration: 1.7489448
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1071
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest][suite]
-    - id: 1076
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.OnHit_ChangeToRunningAndCatchingState]
-      name: OnHit_ChangeToRunningAndCatchingState
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.OnHit_ChangeToRunningAndCatchingState
-      resultStatus: 1
-      duration: 0.0029038
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1071
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest][suite]
-    - id: 1074
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.OnStrikeOut_ChangeToStrikeOut]
-      name: OnStrikeOut_ChangeToStrikeOut
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.OnStrikeOut_ChangeToStrikeOut
-      resultStatus: 1
-      duration: 0.0009058
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1071
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest][suite]
-    - id: 1072
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.WhenEnterState_EnablePitcherAndBatter]
-      name: WhenEnterState_EnablePitcherAndBatter
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.WhenEnterState_EnablePitcherAndBatter
-      resultStatus: 1
-      duration: 0.3868245
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1071
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest][suite]
-    - id: 1073
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.WhenStrike_StrikeState]
-      name: WhenStrike_StrikeState
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest.WhenStrike_StrikeState
-      resultStatus: 1
-      duration: 0.0005663
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1071
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BattingAndPitchingStateTest][suite]
     - id: 1049
       uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest][suite]
       name: BFBallTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest
       resultStatus: 1
-      duration: 0.012512
+      duration: 0.0089869
       messages: 
       output: 
       stacktrace: 
@@ -1520,7 +1419,7 @@ MonoBehaviour:
       name: BallMove
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFBallTest.BallMove
       resultStatus: 1
-      duration: 0.000409
+      duration: 0.0006662
       messages: 
       output: 
       stacktrace: 
@@ -1537,7 +1436,7 @@ MonoBehaviour:
       name: BFGameTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest
       resultStatus: 1
-      duration: 0.0136264
+      duration: 0.0133463
       messages: 
       output: 
       stacktrace: 
@@ -1553,7 +1452,7 @@ MonoBehaviour:
       name: CreateBFGame
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.CreateBFGame
       resultStatus: 1
-      duration: 0.0008662
+      duration: 0.0009859
       messages: 
       output: 
       stacktrace: 
@@ -1570,7 +1469,7 @@ MonoBehaviour:
       name: GameHasTwoCompetitors
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.GameHasTwoCompetitors
       resultStatus: 1
-      duration: 0.0005074
+      duration: 0.0005675
       messages: 
       output: 
       stacktrace: 
@@ -1587,7 +1486,7 @@ MonoBehaviour:
       name: InitOnBattingAndPitchState
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.InitOnBattingAndPitchState
       resultStatus: 1
-      duration: 0.0008294
+      duration: 0.0015577
       messages: 
       output: 
       stacktrace: 
@@ -1604,7 +1503,7 @@ MonoBehaviour:
       name: UpdateFSM
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFGameTest.UpdateFSM
       resultStatus: 1
-      duration: 0.0006326
+      duration: 0.0008527
       messages: 
       output: 
       stacktrace: 
@@ -1621,7 +1520,7 @@ MonoBehaviour:
       name: BFInputControllerTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFInputControllerTest
       resultStatus: 1
-      duration: 0.0082082
+      duration: 0.0087156
       messages: 
       output: 
       stacktrace: 
@@ -1637,7 +1536,7 @@ MonoBehaviour:
       name: Test
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFInputControllerTest.Test
       resultStatus: 1
-      duration: 0.0002063
+      duration: 0.0003025
       messages: 
       output: 
       stacktrace: 
@@ -1654,7 +1553,7 @@ MonoBehaviour:
       name: BFPitcherTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest
       resultStatus: 2
-      duration: 0.0148097
+      duration: 0.0136891
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1670,7 +1569,7 @@ MonoBehaviour:
       name: IDLE_To_THINK
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.IDLE_To_THINK
       resultStatus: 1
-      duration: 0.0003348
+      duration: 0.0004159
       messages: 
       output: 
       stacktrace: 
@@ -1687,7 +1586,7 @@ MonoBehaviour:
       name: OnStartPitching_EnablePitching
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.OnStartPitching_EnablePitching
       resultStatus: 2
-      duration: 0.0006114
+      duration: 0.0006169
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
@@ -1712,7 +1611,7 @@ MonoBehaviour:
       name: PitcherStartInIDLEState
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.PitcherStartInIDLEState
       resultStatus: 1
-      duration: 0.0003283
+      duration: 0.000358
       messages: 
       output: 
       stacktrace: 
@@ -1729,7 +1628,7 @@ MonoBehaviour:
       name: PITCHING_To_IDLE
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.PITCHING_To_IDLE
       resultStatus: 1
-      duration: 0.000283
+      duration: 0.0004424
       messages: 
       output: 
       stacktrace: 
@@ -1746,7 +1645,7 @@ MonoBehaviour:
       name: Pitching_To_Throw
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.Pitching_To_Throw
       resultStatus: 1
-      duration: 0.0006641
+      duration: 0.0005589
       messages: 
       output: 
       stacktrace: 
@@ -1763,7 +1662,7 @@ MonoBehaviour:
       name: Test
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.Test
       resultStatus: 1
-      duration: 0.0002621
+      duration: 0.0003215
       messages: 
       output: 
       stacktrace: 
@@ -1780,7 +1679,7 @@ MonoBehaviour:
       name: THINK_To_PITCHING
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest.THINK_To_PITCHING
       resultStatus: 2
-      duration: 0.0004675
+      duration: 0.0005625
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
@@ -1800,12 +1699,213 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1057
       parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.BFPitcherTest][suite]
+    - id: 1121
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest][suite]
+      name: GameStatesTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest
+      resultStatus: 1
+      duration: 0.1670566
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1120
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1090
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest][suite]
+      name: BattingAndPitchingStateTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest
+      resultStatus: 1
+      duration: 0.1237643
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1121
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest][suite]
+    - id: 1094
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.OnBall_ChangeToBall]
+      name: OnBall_ChangeToBall
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.OnBall_ChangeToBall
+      resultStatus: 1
+      duration: 0.1121109
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest][suite]
+    - id: 1095
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.OnHit_ChangeToRunningAndCatchingState]
+      name: OnHit_ChangeToRunningAndCatchingState
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.OnHit_ChangeToRunningAndCatchingState
+      resultStatus: 1
+      duration: 0.0018637
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest][suite]
+    - id: 1093
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.OnStrikeOut_ChangeToStrikeOut]
+      name: OnStrikeOut_ChangeToStrikeOut
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.OnStrikeOut_ChangeToStrikeOut
+      resultStatus: 1
+      duration: 0.0006312
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest][suite]
+    - id: 1091
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.WhenEnterState_EnablePitcherAndBatter]
+      name: WhenEnterState_EnablePitcherAndBatter
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.WhenEnterState_EnablePitcherAndBatter
+      resultStatus: 1
+      duration: 0.0044047
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest][suite]
+    - id: 1092
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/BattingAndPitchingStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.WhenStrike_StrikeState]
+      name: WhenStrike_StrikeState
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest.WhenStrike_StrikeState
+      resultStatus: 1
+      duration: 0.0005844
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.BattingAndPitchingStateTest][suite]
+    - id: 1096
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest][suite]
+      name: StrikeStateTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest
+      resultStatus: 1
+      duration: 0.1619882
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1121
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest][suite]
+    - id: 1098
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/StrikeStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.GameDispatchMessageToTheOutside]
+      name: GameDispatchMessageToTheOutside
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.GameDispatchMessageToTheOutside
+      resultStatus: 1
+      duration: 0.1241902
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1096
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest][suite]
+    - id: 1099
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/StrikeStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.WaitAFewSeconds_ThenGoToBattingAndPitching]
+      name: WaitAFewSeconds_ThenGoToBattingAndPitching
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.WaitAFewSeconds_ThenGoToBattingAndPitching
+      resultStatus: 1
+      duration: 0.015139
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1096
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest][suite]
+    - id: 1097
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/StrikeStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.WhenEnterStrikeState_CallShowStrike]
+      name: WhenEnterStrikeState_CallShowStrike
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.WhenEnterStrikeState_CallShowStrike
+      resultStatus: 1
+      duration: 0.0035152
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1096
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest][suite]
+    - id: 1100
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/StrikeStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.WhenExitStrike_HideMessage]
+      name: WhenExitStrike_HideMessage
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest.WhenExitStrike_HideMessage
+      resultStatus: 1
+      duration: 0.0009318
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1096
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest][suite]
     - id: 1059
       uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
       name: InningManagerTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest
       resultStatus: 1
-      duration: 0.0175463
+      duration: 0.017876
       messages: 
       output: 
       stacktrace: 
@@ -1821,7 +1921,7 @@ MonoBehaviour:
       name: DeffensiveAndOffensiveChangeWhenHalfInningComplete
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.DeffensiveAndOffensiveChangeWhenHalfInningComplete
       resultStatus: 1
-      duration: 0.0005963
+      duration: 0.0006593
       messages: 
       output: 
       stacktrace: 
@@ -1838,7 +1938,7 @@ MonoBehaviour:
       name: EndOfInningDoesNotResultInWinOrLose
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.EndOfInningDoesNotResultInWinOrLose
       resultStatus: 1
-      duration: 0.001808
+      duration: 0.00172
       messages: 
       output: 
       stacktrace: 
@@ -1855,7 +1955,7 @@ MonoBehaviour:
       name: ExtraInning
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInning
       resultStatus: 1
-      duration: 0.0003388
+      duration: 0.0005313
       messages: 
       output: 
       stacktrace: 
@@ -1872,7 +1972,7 @@ MonoBehaviour:
       name: ExtraInningLose
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInningLose
       resultStatus: 1
-      duration: 0.0002532
+      duration: 0.0003223
       messages: 
       output: 
       stacktrace: 
@@ -1889,7 +1989,7 @@ MonoBehaviour:
       name: ExtraInningWin
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.ExtraInningWin
       resultStatus: 1
-      duration: 0.000263
+      duration: 0.0002832
       messages: 
       output: 
       stacktrace: 
@@ -1906,7 +2006,7 @@ MonoBehaviour:
       name: FirstHalfDoesntCompleteInning
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.FirstHalfDoesntCompleteInning
       resultStatus: 1
-      duration: 0.000638
+      duration: 0.0005927
       messages: 
       output: 
       stacktrace: 
@@ -1923,7 +2023,7 @@ MonoBehaviour:
       name: GameHas9Innings
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.GameHas9Innings
       resultStatus: 1
-      duration: 0.0002056
+      duration: 0.0002614
       messages: 
       output: 
       stacktrace: 
@@ -1940,7 +2040,7 @@ MonoBehaviour:
       name: MaxEtraInningsEndTheGame
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.MaxEtraInningsEndTheGame
       resultStatus: 1
-      duration: 0.0002939
+      duration: 0.0002999
       messages: 
       output: 
       stacktrace: 
@@ -1957,7 +2057,7 @@ MonoBehaviour:
       name: PlayerLose
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.PlayerLose
       resultStatus: 1
-      duration: 0.0002319
+      duration: 0.0002851
       messages: 
       output: 
       stacktrace: 
@@ -1974,7 +2074,7 @@ MonoBehaviour:
       name: PlayerWin
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.PlayerWin
       resultStatus: 1
-      duration: 0.0002589
+      duration: 0.0002716
       messages: 
       output: 
       stacktrace: 
@@ -1991,7 +2091,7 @@ MonoBehaviour:
       name: SecondHalfCompleteInning
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest.SecondHalfCompleteInning
       resultStatus: 1
-      duration: 0.0003877
+      duration: 0.000379
       messages: 
       output: 
       stacktrace: 
@@ -2008,7 +2108,7 @@ MonoBehaviour:
       name: PitcherStatesTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.PitcherStatesTest
       resultStatus: 1
-      duration: 0.0102589
+      duration: 0.009789
       messages: 
       output: 
       stacktrace: 
@@ -2024,7 +2124,7 @@ MonoBehaviour:
       name: ReleaseTheBall
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.PitcherStatesTest.ReleaseTheBall
       resultStatus: 1
-      duration: 0.0007041
+      duration: 0.0009548
       messages: 
       output: 
       stacktrace: 
@@ -2041,7 +2141,7 @@ MonoBehaviour:
       name: WaitAFewSecondsThenThrow
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.PitcherStatesTest.WaitAFewSecondsThenThrow
       resultStatus: 1
-      duration: 0.0007963
+      duration: 0.0008369
       messages: 
       output: 
       stacktrace: 
@@ -2058,7 +2158,7 @@ MonoBehaviour:
       name: PlayerSelectTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest
       resultStatus: 1
-      duration: 0.0104253
+      duration: 0.0151518
       messages: 
       output: 
       stacktrace: 
@@ -2074,7 +2174,7 @@ MonoBehaviour:
       name: Select1Player
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest.Select1Player
       resultStatus: 1
-      duration: 0.0016181
+      duration: 0.0014998
       messages: 
       output: 
       stacktrace: 
@@ -2091,7 +2191,7 @@ MonoBehaviour:
       name: Select2Players
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest.Select2Players
       resultStatus: 1
-      duration: 0.0005182
+      duration: 0.0006615
       messages: 
       output: 
       stacktrace: 
@@ -2103,67 +2203,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1070
       parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.PlayerSelectTest][suite]
-    - id: 1076
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.StrikeStateTest][suite]
-      name: StrikeStateTest
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.StrikeStateTest
-      resultStatus: 2
-      duration: 0.0161897
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1120
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
-    - id: 1077
-      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/StrikeStateTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.StrikeStateTest.WhenEnterStrikeState_CallShowStrike]
-      name: WhenEnterStrikeState_CallShowStrike
-      fullName: Assets.BaseballFramework.Tests.Edit.Unit.StrikeStateTest.WhenEnterStrikeState_CallShowStrike
-      resultStatus: 2
-      duration: 0.0071469
-      messages: "NSubstitute.Exceptions.ReceivedCallsException : Expected to receive
-        a call matching:\n\tShowStrikeMessage()\r\nActually received no matching
-        calls.\r\n"
-      output: 
-      stacktrace: "  at NSubstitute.Core.ReceivedCallsExceptionThrower.Throw (NSubstitute.Core.ICallSpecification
-        callSpecification, System.Collections.Generic.IEnumerable`1[T] matchingCalls,
-        System.Collections.Generic.IEnumerable`1[T] nonMatchingCalls, NSubstitute.ReceivedExtensions.Quantity
-        requiredQuantity) [0x00050] in <7e833acfc8404b41b27dfbc5eb64b680>:0 \r\n 
-        at NSubstitute.Routing.Handlers.CheckReceivedCallsHandler.Handle (NSubstitute.Core.ICall
-        call) [0x00078] in <7e833acfc8404b41b27dfbc5eb64b680>:0 \r\n  at NSubstitute.Routing.Route.Handle
-        (NSubstitute.Core.ICall call) [0x00004] in <7e833acfc8404b41b27dfbc5eb64b680>:0
-        \r\n  at NSubstitute.Core.CallRouter.Route (NSubstitute.Core.ICall call)
-        [0x0003b] in <7e833acfc8404b41b27dfbc5eb64b680>:0 \r\n  at NSubstitute.Proxies.CastleDynamicProxy.CastleForwardingInterceptor.Intercept
-        (Castle.DynamicProxy.IInvocation invocation) [0x00015] in <7e833acfc8404b41b27dfbc5eb64b680>:0
-        \r\n  at Castle.DynamicProxy.AbstractInvocation.Proceed () [0x00050] in <99e1b17afc2a44c5b97e5af224da0ae2>:0
-        \r\n  at NSubstitute.Proxies.CastleDynamicProxy.ProxyIdInterceptor.Intercept
-        (Castle.DynamicProxy.IInvocation invocation) [0x0002e] in <7e833acfc8404b41b27dfbc5eb64b680>:0
-        \r\n  at Castle.DynamicProxy.AbstractInvocation.Proceed () [0x00050] in <99e1b17afc2a44c5b97e5af224da0ae2>:0
-        \r\n  at Castle.Proxies.ObjectProxy_1.ShowStrikeMessage () [0x0001f] in <1894717ad69443feb30b5ba1c74666d1>:0
-        \r\n  at Assets.BaseballFramework.Tests.Edit.Unit.StrikeStateTest.WhenEnterStrikeState_CallShowStrike
-        () [0x0001a] in C:\\Dev\\Repositories\\Baseball\\Assets\\BaseballFramework\\Tests\\Edit\\Unit\\GameStates\\GameStatesTest.cs:123
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <00c558282d074245ab3496e2d108079b>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1076
-      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.StrikeStateTest][suite]
     - id: 1049
       uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection][suite]
       name: TeamSelection
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection
       resultStatus: 1
-      duration: 0.0102873
+      duration: 0.0169186
       messages: 
       output: 
       stacktrace: 
@@ -2179,7 +2224,7 @@ MonoBehaviour:
       name: DisplayListOfTeams
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection.DisplayListOfTeams
       resultStatus: 1
-      duration: 0.0002881
+      duration: 0.0003004
       messages: 
       output: 
       stacktrace: 
@@ -2196,7 +2241,7 @@ MonoBehaviour:
       name: Select1Player
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.TeamSelection.Select1Player
       resultStatus: 1
-      duration: 0.0002507
+      duration: 0.0003458
       messages: 
       output: 
       stacktrace: 
@@ -2213,7 +2258,7 @@ MonoBehaviour:
       name: TimerTest
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.TimerTest
       resultStatus: 1
-      duration: 0.0133185
+      duration: 0.009113
       messages: 
       output: 
       stacktrace: 
@@ -2229,7 +2274,7 @@ MonoBehaviour:
       name: Wait
       fullName: Assets.BaseballFramework.Tests.Edit.Unit.TimerTest.Wait
       resultStatus: 1
-      duration: 0.001147
+      duration: 0.0011887
       messages: 
       output: 
       stacktrace: 
@@ -2321,6 +2366,39 @@ MonoBehaviour:
       categories: []
       parentId: 1043
       parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/[Spec][suite]
+    - id: 1028
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest][suite]
+      name: HalfInningBoardTest
+      fullName: Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1118
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay][suite]
+    - id: 1029
+      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/HalfInningBoardTest/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest.TestStrike]
+      name: TestStrike
+      fullName: Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest.TestStrike
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest][suite]
     - id: 1027
       uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest][suite]
       name: PitchingTest
@@ -3174,17 +3252,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: Edit.dll/[Edit][GameTest+Select2P][suite]
-    m_ResultText: 'Unit (2.709s)
-
-      ---
-
-      One or more child tests had errors'
+    m_ResultText: ReleaseTheBall (0.001s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9f1da127
-      m_LastClickedID: 664870303
-      m_ExpandedIDs: 8def308d543d09986ff1c79d2e4dd49f88e7bea09cd376b35f29b4b7bdaff3c3ed1e2fd0144d2ad82a72b7f4b2513301b0efbb06380ea10ed7370a1581393c1cee9f141f9f1da127f923e52837e4a2333f4f0837bda3694d1fa4ef53a6f225581e3a625ec5a8306fed84986fffffff7f
+      m_SelectedIDs: 3e9c177f
+      m_LastClickedID: 2132253758
+      m_ExpandedIDs: 8def308d543d09986ff1c79d2e4dd49f88e7bea09cd376b35f29b4b7bdaff3c3ed1e2fd0144d2ad82a72b7f4363421f9b2513301380ea10ed7370a15ceb2301c81393c1cee9f141f9f1da127f923e52837e4a2333f4f0837032c743abda3694da6f225581e3a625ec5a8306fed84986f762b477dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

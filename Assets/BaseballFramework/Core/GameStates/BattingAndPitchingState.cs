@@ -7,10 +7,20 @@ namespace MarcoTMP.BaseballFramework.Core.GameStates
     {        
         public IPitchingRules pitchingRules;
 
+        public BFCatcher catcher;
+
         override public void Enter()
         {
             //game.catcher.OnCatch => game.BallTouchHome();
             pitchingRules.InitPitching();
+
+            //pitchingResult.Reset();
+
+            catcher.OnBallCatched = () => 
+            {
+                // is strike
+                //inningBoard.Strike();
+            };
         }
 
         override public void Exit()

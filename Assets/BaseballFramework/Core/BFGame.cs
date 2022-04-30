@@ -43,6 +43,7 @@ namespace MarcoTMP.BaseballFramework.Core
         public bool IsStrike { get; set; } = false;
         public GameStates.GameState defaultState;
 
+
         public BFGame()
         {
             fsm = FSMFactory();
@@ -110,6 +111,7 @@ namespace MarcoTMP.BaseballFramework.Core
             IsStrike = false;
 
             // this might go into batting and pitching state
+            // or in the game.SetPitcherActor(pitcherActor);
             pitcherActor.onReleaseBall = () =>
             {
                 ballActor.MoveTo("Home");
@@ -118,6 +120,11 @@ namespace MarcoTMP.BaseballFramework.Core
             catcherActor.OnBallCatched = () =>
             {
                 IsStrike = true;
+
+                // anota strike al equipo ofensivo
+                // inningBoard.strike++;
+                // dispatch que hubo un strike
+
             };
         }
 
@@ -189,6 +196,14 @@ namespace MarcoTMP.BaseballFramework.Core
         public CompetingType type = CompetingType.Human;
         public string team = "";
         public int runs = 0;
+    }
+
+    public class HalfInningBoard
+    {
+        public int strikes;
+        public int balls;
+        public int foul;
+        public int outs;
     }
 
 }
