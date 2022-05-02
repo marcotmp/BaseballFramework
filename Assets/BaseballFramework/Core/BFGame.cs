@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace MarcoTMP.BaseballFramework.Core
 {
-    public enum GameState
+    public enum GameStateEnum
     {
         RunningAndCatching,
         BattingAndPitching,
@@ -27,7 +27,7 @@ namespace MarcoTMP.BaseballFramework.Core
     public class BFGame : IPitchingRules // 9InningBasballSimulation
     {
         public static Func<FiniteStateMachine<BFGame>> FSMFactory = ()=> default(FiniteStateMachine<BFGame>);
-        public GameState state = GameState.BattingAndPitching;
+        public GameStateEnum state = GameStateEnum.BattingAndPitching;
         public BFPitcher pitcherActor;
         public BFBatter batterActor;
         public BFBall ballActor;
@@ -70,7 +70,7 @@ namespace MarcoTMP.BaseballFramework.Core
         {
             //fsm.ChangeStateByType<BattingAndPitchingState>();
             fsm.ChangeToState(defaultState);
-            state = GameState.BattingAndPitching;
+            state = GameStateEnum.BattingAndPitching;
 
             // if catcher get the ball
             // catcher.onBallCatched = () => BallTouchHome();
@@ -204,6 +204,15 @@ namespace MarcoTMP.BaseballFramework.Core
         public int balls;
         public int foul;
         public int outs;
+
+        public void Reset()
+        {
+            strikes = 0;
+            balls = 0;
+            foul = 0;
+            outs = 0;
+        }
+
     }
 
 }

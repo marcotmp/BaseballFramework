@@ -1,4 +1,5 @@
 ﻿using MarcoTMP.BaseballFramework.Core;
+using MarcoTMP.BaseballFramework.Core.GameStates;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -97,10 +98,157 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
         }
     }
 
-
-
     public class Catcher
     {
-        public Action CatchTheBall { get; internal set; }
+        public bool hasTheBall = false;
+        public event Action CatchTheBall;
     }
+
+
+    public class UmpierTest
+    {
+        public void StrikeTest()
+        {
+            var catcher = new Catcher();
+            var umpire = new Umpire();
+
+            // when catcher has the ball
+            catcher.hasTheBall = true;
+
+            umpire.Update(0);
+
+            // then umpire result in strike
+            Assert.AreEqual(CatchResult.Strike, umpire.catchResult);
+        }
+    }
+
+    public class Batter
+    {
+        public event Action HitTheBall;
+    }
+
+    public class Umpire
+    {
+        public CatchResult catchResult;
+        public Catcher catcher;
+        public HalfInningBoard board;
+        public Action onStrike;
+        public Action onOut;
+        public Action onEndOfHalf;
+
+        public Batter batter;
+
+        public void Init()
+        {
+            catcher.CatchTheBall += OnCatcherCatchTheBall;
+            batter.HitTheBall += OnBatterHitTheBall;
+        }
+
+        private void OnBatterHitTheBall()
+        {
+
+        }
+
+        private void OnCatcherCatchTheBall()
+        {
+            // Variables:
+            // on the left
+            // on the right
+            // on the center
+            // batter swung the bat
+
+            bool onBatterZone = false;
+            bool batterSwung = false;
+
+            if (batterSwung)
+            {
+                catchResult = CatchResult.Strike;
+            }
+            else
+            {
+                if (onBatterZone)
+                    catchResult = CatchResult.Ball;
+                else
+                    catchResult = CatchResult.Strike;
+            }
+
+            if (catchResult == CatchResult.Strike)
+            {
+                ProcessStrike();
+            }
+
+        }
+
+        private void ProcessStrike()
+        { 
+            // if catch in center => strike
+            // if catch in bat zone => ball
+            board.strikes++;
+            if (board.strikes > 3)
+            {
+                board.strikes = 0;
+
+                // process outs
+                board.outs++;
+                if (board.outs > 3)
+                {
+                    // result out and end of halg
+                    onEndOfHalf?.Invoke();
+                    // Do strike => out => onChange
+                }
+                else
+                {
+                    // result strike out
+                    onOut?.Invoke();
+                    // Do strike => out
+                }
+            }
+            else
+            {
+                // result just strike
+                onStrike?.Invoke();
+                // Do strike
+            }
+        }
+
+        public void Reset()
+        {
+            catchResult = CatchResult.None;
+        }
+
+        internal void Update(int v)
+        {
+
+        }
+    }
+
+    public enum CatchResult
+    {
+        None,
+        Strike,
+        Ball
+    }
+
+
+    public enum PitchingResult
+    {
+
+    }
+
+
+    public class ShowMessages : GameState
+    {
+        public Umpire umpire;
+        public HalfInningBoard board;
+        public override void Enter()
+        {
+            base.Enter();
+
+            // if faul => show foul
+            // if strike => show strike
+            // if out => show out
+            // if change => change
+        }
+    }
+
 }
