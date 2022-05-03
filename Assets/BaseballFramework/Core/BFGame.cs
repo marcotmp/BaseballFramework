@@ -117,15 +117,15 @@ namespace MarcoTMP.BaseballFramework.Core
                 ballActor.MoveTo("Home");
             };
 
-            catcherActor.OnBallCatched = () =>
-            {
-                IsStrike = true;
+            //catcherActor.OnBallCatched = () =>
+            //{
+            //    IsStrike = true;
 
-                // anota strike al equipo ofensivo
-                // inningBoard.strike++;
-                // dispatch que hubo un strike
+            //    // anota strike al equipo ofensivo
+            //    // inningBoard.strike++;
+            //    // dispatch que hubo un strike
 
-            };
+            //};
         }
 
         public void FinishPitching()

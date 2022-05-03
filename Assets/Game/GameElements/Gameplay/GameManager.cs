@@ -64,8 +64,9 @@ public class GameManager : MonoBehaviour, IGameListener
         // game states
         var gameFSM = new FiniteStateMachine<BFGame>();
         var battingAndPitchingState = new BattingAndPitchingState(); 
-        battingAndPitchingState.pitchingRules = game;
-        battingAndPitchingState.processPitch = processPitch;
+        //battingAndPitchingState.pitchingRules = game;
+        battingAndPitchingState.game = game;
+        battingAndPitchingState.pitchResult = processPitch;
         gameFSM.AddState(battingAndPitchingState);
 
         var strikeState = new StrikeState();

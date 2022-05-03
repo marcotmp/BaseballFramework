@@ -31,10 +31,37 @@ namespace MarcoTMP.BaseballFramework.Core
             batter.OnHit = ProcessHit;
         }
 
+        internal void Finish()
+        {
+            catcher.OnBallCatched = () => { }; ;
+            batter.OnDeadBall = () => { }; ;
+            batter.OnHit = () => { };
+        }
+
         private void ProcessDeadBall()
         {
             result.Clear();
             OnDeadBall?.Invoke();
+        }
+
+        internal bool IsStrikeOut()
+        {
+            return result.ballResult == BallResult.Strike && result.@out;
+        }
+
+        internal bool IsStrike()
+        {
+            return result.ballResult == BallResult.Strike;
+        }
+
+        internal bool IsBall()
+        {
+            return result.ballResult == BallResult.Ball;
+        }
+
+        internal bool IsHit()
+        {
+            return result.ballResult == BallResult.Hit;
         }
 
         private void ProcessHit()
@@ -45,7 +72,7 @@ namespace MarcoTMP.BaseballFramework.Core
 
         private void ProcessCatchBall()
         {
-            bool ballTouchBatterZone = true;
+            bool ballTouchBatterZone = false;
             result.Clear();
             // debió ser ball, pero el player hizo swing, so, es strike!
             if (batter.didSwing)

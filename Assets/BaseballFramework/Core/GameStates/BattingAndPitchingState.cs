@@ -6,46 +6,44 @@ namespace MarcoTMP.BaseballFramework.Core.GameStates
     public class BattingAndPitchingState : GameState
     {        
         public IPitchingRules pitchingRules;
-        public ProcessPitch processPitch;
+        public ProcessPitch pitchResult;
         public BFCatcher catcher;
-        
+        public BFGame game;
         override public void Enter()
         {
-            processPitch.Reset();
+            pitchResult.Reset();
+            pitchResult.Init();
 
-            pitchingRules.InitPitching();
-
+            //pitchingRules.InitPitching();
+            game.InitPitching();
 
         }
 
         override public void Exit()
         {
-            pitchingRules.FinishPitching();
+            //pitchingRules.FinishPitching();
+            game.FinishPitching();
+            pitchResult.Finish();
+
         }
 
         override public void Update(float dt)
         {
-            pitchingRules.HandleBattingAndPitching(dt);
+            //pitchingRules.HandleBattingAndPitching(dt);
+            game.HandleBattingAndPitching(dt);
 
-            // StrikeOut
-            //if (gameRules.CheckIsStrikeOut())
-            if (pitchingRules.CheckIsStrikeOut())
-            //if (checkIsStrikeOut())
+            if (pitchResult.IsStrikeOut())
                 fsm.ChangeStateByType<StrikeOutState>();
-            // Strike
-            else if (pitchingRules.IsStrike)
-            //else if (checkIsStrike())
+            else if (pitchResult.IsStrike())
                 fsm.ChangeStateByType<StrikeState>();
-            else if (pitchingRules.CheckIsBall())
-            //else if (checkIsBall())
+            else if (pitchResult.IsBall())
                 fsm.ChangeStateByType<BallGameState>();
+
             // Hit
-            else if (pitchingRules.CheckIsHit())
-            //else if (checkIsHit())
+            else if (pitchResult.IsHit())
                 fsm.ChangeStateByType<RunningAndCatchingState>();
             // Steal
-            else if (pitchingRules.CheckStealBase())
-            //else if (checkOffensiveTryToStealBase())
+            else if (game.CheckStealBase())
                 fsm.ChangeStateByType<RunningAndCatchingState>();
         }
     }
