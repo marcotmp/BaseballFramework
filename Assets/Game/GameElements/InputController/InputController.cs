@@ -13,8 +13,7 @@ public class InputController : MonoBehaviour
     private InputAction buttonStart;
     private InputAction buttonDPad;
 
-    BFGame game;
-    BFInputController controller1;
+    BFInputController gameController;
 
     public void Start()
     {
@@ -27,25 +26,24 @@ public class InputController : MonoBehaviour
 
     private void Update()
     {
-        if (controller1 != null)
+        if (gameController != null)
         {
-            controller1.buttonA = buttonA.ReadValue<float>() != 0;
-            controller1.buttonB = buttonB.ReadValue<float>() != 0;
+            gameController.buttonA = buttonA.ReadValue<float>() != 0;
+            gameController.buttonB = buttonB.ReadValue<float>() != 0;
             //controller1.buttonStart = buttonStart.ReadValue<float>() != 0;
             //controller1.buttonSelect = buttonSelect.ReadValue<float>() != 0;
 
             var dPad = buttonDPad.ReadValue<Vector2>();
-            controller1.dPadUp = dPad.y > 0;
-            controller1.dPadDown = dPad.y < 0;
-            controller1.dPadLeft = dPad.x < 0;
-            controller1.dPadRight = dPad.x > 0;
+            gameController.dPadUp = dPad.y > 0;
+            gameController.dPadDown = dPad.y < 0;
+            gameController.dPadLeft = dPad.x < 0;
+            gameController.dPadRight = dPad.x > 0;
 
-            //Debug.Log(JsonUtility.ToJson(controller1));
         }
     }
 
-    internal void ConnectInput(BFInputController player1InputController)
+    internal void ConnectInput(BFInputController playerInputController)
     {
-        controller1 = player1InputController;
+        gameController = playerInputController;
     }
 }

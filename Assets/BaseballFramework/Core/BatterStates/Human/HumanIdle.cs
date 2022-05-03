@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace MarcoTMP.BaseballFramework.Core.BatterStates.Human
 {
@@ -17,8 +18,11 @@ namespace MarcoTMP.BaseballFramework.Core.BatterStates.Human
         override public void Enter() { }
         override public void Update(float dt)
         {
-            if(input.buttonA)
+            if (input.buttonA)
+            {
+                Debug.Log($"input buttonA {input.buttonA}");
                 fsm.ChangeStateByType<HumanSwing>();
+            }
         }
         override public void Exit() { }
     }

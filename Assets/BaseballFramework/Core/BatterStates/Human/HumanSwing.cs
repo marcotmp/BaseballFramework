@@ -8,12 +8,21 @@ namespace MarcoTMP.BaseballFramework.Core.BatterStates.Human
 {
     public class HumanSwing : BatterSwing
     {
-        override public void Enter() { }
+        public Timer timer = new Timer();
+
+        override public void Enter() 
+        {
+            timer.Reset(2);
+            batter.DoSwing();
+        }
         override public void Update(float dt)
         {
             // if animation completed, back to idle
             //if (batter.IsAnimationCompleted())
-            fsm.ChangeStateByType<HumanIdle>();
+            if (timer.Tick(dt))
+            {
+                fsm.ChangeStateByType<HumanIdle>();
+            }
 
         }
         override public void Exit() { }

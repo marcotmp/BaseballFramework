@@ -1,9 +1,6 @@
-﻿using NUnit.Framework;
+﻿using MarcoTMP.BaseballFramework.Core;
+using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assets.BaseballFramework.Tests.Edit.Specs.Gameplay
 {
@@ -16,45 +13,78 @@ namespace Assets.BaseballFramework.Tests.Edit.Specs.Gameplay
 
         public void TestRectStrike()
         {
-            // Given game is in BattingAndPitching
-            // And pitcher throws a rect ball
-            // When catcher catches the ball
-            // Then show strike message
+            bool onShowStrike = false;
 
-            // game = CreateGameInState(new BattingAndPitching());
-            // pitcher.Throw("rect");
-            // catcher.CatchBall();
-            // game.Received().ShowStrike();
+            // Given game is in BattingAndPitching
+            var game = new Game();
+            game.OnShowStrike += () => onShowStrike = true;
+            //game.SetState("BattingAndPitching");
+
+            // And pitcher throws a rect ball
+            //game.pitcher.ThrowRect();
+
+            // When catcher catches the ball
+            game.catcher.CatchBall();
+
+            // Then show strike message
+            Assert.True(onShowStrike);
         }
 
         public void TestCurveStrike()
         {
             // Given game is in BattingAndPitching
+            // game.SetState(new BattingAndPitching());
+
             // And pitcher throws a curve ball
+            // game.pitcher.Throw("rect");
+
             // And batter swing the bat
+            // game.batter.Swing();
+
             // When catcher catches the ball
+            // game.catcher.CatchBall();
+
             // Then show strike message
+            // game.Received().ShowStrike();
         }
-
-
-
 
         public void TestStrikeOutChangeBatter()
         {
             // Given game is in BattingAndPitching
+            // game.SetState("BattingAndPitching");
+
             // And pitcher throws a rect ball
+            // game.pitcher.Throw("rect");
+
             // And board is strikes=2
+            // game.board.strikes = 2;
+
             // When catcher catches the ball
+            // game.catcher.CatchBall();
+
             // Then show strike message
+            // game.Received().ShowStrike();
+
             // When 2 seconds has passed
+            // game.Update(2);
+
             // Then show out message
+            // game.Received().ShowOut();
+
             // When 2 seconds has passed
+            // game.Update(2);
+
             // Then Change batter and back to BattingAndPitching
+            // game.Received().ChangeBatter();
+            // game.currentState.Type is BattingAndPitching;
+
         }
 
         public void TestStrikeOutChangeHalf()
         {
             // Given game is in BattingAndPitching
+            // game.SetState("BattingAndPitching");
+
             // And pitcher throws a rect ball
             // And board is strikes=2
             // And board is out=2
@@ -95,5 +125,157 @@ namespace Assets.BaseballFramework.Tests.Edit.Specs.Gameplay
         }
     }
 
-    public class Catcher { }
+    public class Game // ProcessPitch
+    {
+        public Pitcher pitcher;
+        public Catcher catcher;
+        public Batter batter;
+
+        public Action OnShowStrike;
+        public Action OnShowBall;
+
+        public HalfInningBoard board;
+        
+
+        public PitchBallResult result { get; private set; }
+
+
+        public Action<PitchBallResult> onProcessResults;
+        public Action OnHit;
+        public Action OnDeadBall;
+
+        public void Init()
+        {
+            catcher.onBallCatched = ProcessCatchBall;
+            batter.OnDeadBall = ProcessDeadBall;
+            batter.OnHit = ProcessHit;
+        }
+
+        private void ProcessDeadBall()
+        {
+            //result.Clear();
+            //result.ballResult = BallResult.DeadBall;
+            //onProcessResults?.Invoke(result);
+            OnDeadBall?.Invoke();
+        }
+
+        private void ProcessHit()
+        {
+            //result.Clear();
+            //result.ballResult = BallResult.Hit;
+            OnHit();
+        }
+
+        [Obsolete]
+        public void SetState(string v) 
+        {
+            //fps.ChangeState(v);
+        }
+
+        private void ProcessCatchBall() {
+            bool ballTouchBatterZone = true;
+            result.Clear();
+            // debió ser ball, pero el player hizo swing, so, es strike!
+            if (batter.didSwing)
+                result.ballResult = BallResult.Strike;
+            else
+            {
+                if (ballTouchBatterZone)
+                    result.ballResult = BallResult.Ball;
+                else
+                    result.ballResult = BallResult.Strike;
+            }
+
+            if (result.ballResult == BallResult.Strike)
+            {
+                ProcessStrike();
+                onProcessResults?.Invoke(result);
+            }
+        }
+
+        private void ProcessStrike()
+        {
+            // if catch in center => strike
+            // if catch in bat zone => ball
+            board.strikes++;
+            if (board.strikes > 3)
+            {
+                board.strikes = 0;
+
+                // process outs
+                board.outs++;
+
+                result.@out = true;
+
+                if (board.outs > 3)
+                {
+
+                    result.endOfHalf = true;
+
+                    // result out and end of halg
+                    //onEndOfHalf?.Invoke();
+                    // Do strike => out => onChange
+                }
+                //else
+                //{
+                //    // result strike out
+                //    //onOut?.Invoke();
+                //    // Do strike => out
+                //}
+            }
+            //else
+            //{
+            //    // result just strike
+            //    //onStrike?.Invoke();
+            //    // Do strike
+            //}
+
+            
+        }
+    }
+
+    public class BattingAndPitching 
+    {
+    
+    }
+    public class Catcher
+    {
+        internal Action onBallCatched;
+
+        public void CatchBall()
+        {
+        }
+    }
+    public class Pitcher
+    {
+        internal void ThrowRect()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public class Batter
+    {
+        internal bool didSwing;
+
+        public Action OnDeadBall { get; internal set; }
+        public Action OnHit { get; internal set; }
+    }
+
+    public enum BallResult
+    {
+        None, Ball, DeadBall, Strike, Hit
+    }
+    public class PitchBallResult
+    {
+        public BallResult ballResult;
+        internal bool @out;
+        internal bool endOfHalf;
+
+        internal void Clear()
+        {
+            ballResult = BallResult.None;
+            @out = false;
+            endOfHalf = false;
+        }
+    }
 }

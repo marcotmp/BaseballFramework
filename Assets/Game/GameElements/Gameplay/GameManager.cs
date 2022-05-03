@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour, IGameListener
         // Setup batter
         var _batter = new BFBatter();
         var inputController = new BFInputController();
-
         var batterBrain = new FiniteStateMachine<BFBatter>();
         batterBrain.AddState(new HumanIdle(inputController));
         batterBrain.AddState(new HumanMove());
@@ -42,17 +41,31 @@ public class GameManager : MonoBehaviour, IGameListener
 
         var _ball = new BFBall();
         var _catcher = new BFCatcher();
+        var _pitcher = CreateAIPitcher();
 
         game = new BFGame();
-        game.pitcherActor = CreateAIPitcher();
+        game.pitcherActor = _pitcher;
         game.batterActor = _batter;
         game.ballActor = _ball;
         game.catcherActor = _catcher;
+        game.player1InputController = inputController;
+
+        var board = new HalfInningBoard();
+        var pitchBallResult = new PitchBallResult();
+        var processPitch = new ProcessPitch()
+        {
+            batter = _batter,
+            pitcher = _pitcher,
+            board = board,
+            catcher = _catcher,
+            result = pitchBallResult
+        };
 
         // game states
         var gameFSM = new FiniteStateMachine<BFGame>();
         var battingAndPitchingState = new BattingAndPitchingState(); 
         battingAndPitchingState.pitchingRules = game;
+        battingAndPitchingState.processPitch = processPitch;
         gameFSM.AddState(battingAndPitchingState);
 
         var strikeState = new StrikeState();

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 112
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 113
+  controlID: 18
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     y: 0
     width: 185
     height: 432
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -243,8 +243,8 @@ MonoBehaviour:
     y: 432
     width: 774
     height: 299
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 0
     width: 347
     height: 731
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8e7a0000
-      m_LastClickedID: 31374
-      m_ExpandedIDs: fccfffff28d0ffff52d1ffffb2d1ffff54d9ffffa2daffffccdbfffff8dcffff22deffff54dfffff80e0ffffb0e1ffff50e3ffff94e4fffface5ffff28e7ffff52e9ffff8eeaffffc8eefffff4efffff94f6ffff06f7ffff16fbffff027b0000
+      m_SelectedIDs: 80540000
+      m_LastClickedID: 21632
+      m_ExpandedIDs: 16fbffffa45400002c550000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -820,22 +820,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/GameElements/InputController
+    - Assets/BaseballFramework/Core
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Game/GameElements/InputController
+  - Assets/BaseballFramework/Core
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Dev\Repositories\Baseball
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da550000
-    m_LastClickedID: 21978
-    m_ExpandedIDs: 000000008455000086550000885500008a5500008c5500008e55000090550000
+    m_SelectedIDs: d8550000
+    m_LastClickedID: 21976
+    m_ExpandedIDs: 000000008a5500008c5500008e55000090550000925500009455000096550000b8550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -863,7 +863,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008455000086550000885500008a5500008c5500008e55000090550000
+    m_ExpandedIDs: 000000008a5500008c5500008e55000090550000925500009455000096550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -888,24 +888,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 66540000
-    m_LastClickedInstanceID: 21606
+    m_SelectedInstanceIDs: b4190000
+    m_LastClickedInstanceID: 6580
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000186c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: BatterHumanController
+      m_OriginalName: BatterHumanController
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 6580
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -1900,6 +1900,39 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1096
       parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/GameStatesTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.GameStatesTest.StrikeStateTest][suite]
+    - id: 1070
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.HalfInningBoardTest][suite]
+      name: HalfInningBoardTest
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.HalfInningBoardTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1125
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit][suite]
+    - id: 1071
+      uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/HalfInningBoardTest/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.HalfInningBoardTest.TestStrike]
+      name: TestStrike
+      fullName: Assets.BaseballFramework.Tests.Edit.Unit.HalfInningBoardTest.TestStrike
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1070
+      parentUniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.HalfInningBoardTest][suite]
     - id: 1059
       uniqueId: Edit.dll/Assets/BaseballFramework/Tests/Edit/Unit/[Edit][Assets.BaseballFramework.Tests.Edit.Unit.InningManagerTest][suite]
       name: InningManagerTest
@@ -2366,39 +2399,6 @@ MonoBehaviour:
       categories: []
       parentId: 1043
       parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/[Spec][suite]
-    - id: 1028
-      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest][suite]
-      name: HalfInningBoardTest
-      fullName: Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1118
-      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay][suite]
-    - id: 1029
-      uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/HalfInningBoardTest/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest.TestStrike]
-      name: TestStrike
-      fullName: Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest.TestStrike
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.HalfInningBoardTest][suite]
     - id: 1027
       uniqueId: Edit.dll/Assets/Game/Tests/Edit/Spec/Gameplay/[Edit][Assets.Game.Tests.Edit.Spec.Gameplay.PitchingTest][suite]
       name: PitchingTest

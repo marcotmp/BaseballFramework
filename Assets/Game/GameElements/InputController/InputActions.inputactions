@@ -47,6 +47,17 @@
                 },
                 {
                     "name": "",
+                    "id": "c1ff8030-78d9-4c07-a0f0-fdd51eebe204",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "be10ef2d-3627-4398-8137-01c8388ecc92",
                     "path": "<Keyboard>/k",
                     "interactions": "",

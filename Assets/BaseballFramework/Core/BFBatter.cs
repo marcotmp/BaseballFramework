@@ -24,6 +24,10 @@ namespace MarcoTMP.BaseballFramework.Core
         public bool isActive;
         private FiniteStateMachine<BFBatter> fsm;
 
+        public Action OnDeadBall;
+        public Action OnHit;
+        internal bool didSwing;
+
         public BFBatter()
         {
             //FiniteStateMachine<BFBatter> humanBrain;
@@ -32,16 +36,12 @@ namespace MarcoTMP.BaseballFramework.Core
             // var batterBrain = CreateHumanBatterBrain();
             // var batterBrain = CreateAIBatterBrain();
             // var batterBrain = currentTeam.GetBatterBrain();
-
-            
         }
 
         public void Enable()
         {
             isActive = true;
         }
-
-
 
         internal void Disable()
         {
@@ -62,6 +62,7 @@ namespace MarcoTMP.BaseballFramework.Core
 
         virtual public void DoSwing()
         {
+            startSwingAnimation?.Invoke();
         }
 
         public void SwingAnimationComplete()
