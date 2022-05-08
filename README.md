@@ -13,6 +13,6 @@ The code was created using TDD (Test Driven Development) to maximize flexibility
 
 
 # Credits
-Developed by: Marco Marmolejos [linktr.ee/marcotmp]
+Developed by: Marco Marmolejos [linktr.ee/marcotmp](https://linktr.ee/marcotmp)
 
 Art: [Name] [@contact]
