@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour, IGameListener
             catcher = _catcher,
             result = pitchBallResult
         };
-
+        game.processPitch = processPitch;
         // game states
         var gameFSM = new FiniteStateMachine<BFGame>();
         var battingAndPitchingState = new BattingAndPitchingState(); 

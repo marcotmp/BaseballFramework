@@ -73,8 +73,10 @@ namespace MarcoTMP.BaseballFramework.Core
         private void ProcessCatchBall()
         {
             bool ballTouchBatterZone = false;
+            // batterZone.ballPassOverIt
+            
             result.Clear();
-            // debió ser ball, pero el player hizo swing, so, es strike!
+            // should be ball, pero el player hizo swing, so, es strike!
             if (batter.didSwing)
                 result.ballResult = BallResult.Strike;
             else

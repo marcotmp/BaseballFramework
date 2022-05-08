@@ -42,7 +42,7 @@ namespace MarcoTMP.BaseballFramework.Core
         public FiniteStateMachine<BFGame> fsm { get; private set; }
         public bool IsStrike { get; set; } = false;
         public GameStates.GameState defaultState;
-
+        public ProcessPitch processPitch;
 
         public BFGame()
         {
