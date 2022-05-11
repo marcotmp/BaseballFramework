@@ -120,6 +120,68 @@ Play Homerun Derby {
 
 
 
+Describe MLB Homerun Derby {
+	Select Teams {
+		Player @select home team
+		Player @select oponent team
+		Al seleccionar ambos equipos se completa la selección
+	}
+	
+	Enter DervyGameplay when Team Selection completes
+	
+	States {
+		Pitching & Batting state {}
+		Ball Fly state {}
+	}
+	
+	Pitcher can pitch the ball
+	Batter can swing the bat
+	Batter can hit the ball
+	Ball can fly after bat
+	Hit result in a homerun
+	Hit result in a not homerun
+
+	Timer {
+		Timer starts in 4 minutes
+		When timer is over, no more pitch retry
+	}
+	
+	Pitching & Batting {
+		Pitching result in a hit
+		Pitching result in not hit
+	}
+	Ball moving after hit {
+		Hit result into a homerun
+		Hit result into not homerun
+	}
+}
+
+Cuando el juego inicia, 
+	Team Selection {
+		el jugador elige el equipo con el que va a jugar
+		luego elige el equipo oponente
+		Al elegir el equipo oponente, se completa la selección
+	}
+	
+	Cambia a la pantalla de Derby gameplay 
+	
+	DerbySetup {
+		El timer está en cero
+		El pitcher está listo para lanzar
+		El bateador está listo para batear
+	}
+	
+	El pitcher lanza la pelota
+	El bateador batea, pero es strike
+	El tiempo se termina
+	El pitcher lanza la pelota
+	El bateador batea y golpea la pelota
+	La pelota llega a homerun
+	Se termina la partida
+}
+
+
+
 Gameplay {
 	Batter view display info (init gameplay)
 	
