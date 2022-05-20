@@ -30,9 +30,19 @@ namespace MarcoTMP.BaseballFramework.Core
         {
             isActive = false;
         }
+
+        virtual public void Init()
+        {
+            throw new NotImplementedException();
+        }
+
         virtual public void Update(float dt)
         {
             fsm.Update(dt);
+        }
+
+        virtual public void Activate()
+        {
         }
 
         public void ThinkingAnimation()

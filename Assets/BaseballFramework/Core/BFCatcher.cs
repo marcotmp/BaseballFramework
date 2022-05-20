@@ -9,5 +9,10 @@ namespace MarcoTMP.BaseballFramework.Core
     public class BFCatcher
     {
         public Action OnBallCatched { get; set; }
+
+        public void CatchBall()
+        {
+            OnBallCatched?.Invoke();
+        }
     }
 }

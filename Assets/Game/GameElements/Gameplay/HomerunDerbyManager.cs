@@ -6,8 +6,9 @@ using UnityEngine;
 using MarcoTMP.BaseballFramework.Core.PitcherStates.AI;
 using MarcoTMP.BaseballFramework.Core.GameStates;
 using MarcoTMP.BaseballFramework.Core.PitcherStates;
+using MarcoTMP.BaseballFramework.HomerunDerby;
 
-public class HomerunDerbyManager : MonoBehaviour, IGameListener
+public class HomerunDerbyManager : MonoBehaviour
 {
     [Header("Game Elements")]
     public Pitcher pitcher;
@@ -23,7 +24,7 @@ public class HomerunDerbyManager : MonoBehaviour, IGameListener
 
     public InputController input;
 
-    private BFGame game;
+    private DerbyGame game;
 
     // Start is called before the first frame update
     void Start()
@@ -44,63 +45,23 @@ public class HomerunDerbyManager : MonoBehaviour, IGameListener
         var _catcher = new BFCatcher();
         var _pitcher = CreateAIPitcher();
 
-        game = new BFGame();
-        game.pitcherActor = _pitcher;
-        game.batterActor = _batter;
-        game.ballActor = _ball;
-        game.catcherActor = _catcher;
-        game.player1InputController = inputController;
-
-        var board = new HalfInningBoard();
-        var pitchBallResult = new PitchBallResult();
-        var processPitch = new ProcessPitch()
-        {
-            batter = _batter,
-            pitcher = _pitcher,
-            board = board,
-            catcher = _catcher,
-            result = pitchBallResult
-        };
-        game.processPitch = processPitch;
-        // game states
-        var gameFSM = new FiniteStateMachine<BFGame>();
-        var battingAndPitchingState = new BattingAndPitchingState();
-        //battingAndPitchingState.pitchingRules = game;
-        battingAndPitchingState.game = game;
-        battingAndPitchingState.pitchResult = processPitch;
-        gameFSM.AddState(battingAndPitchingState);
-
-        var strikeState = new StrikeState();
-        gameFSM.AddState(strikeState);
-
-        game.SetFSM(gameFSM);
-
-        game.defaultState = battingAndPitchingState;
-
-        // setup teams
-        game.Select1PlayerMode();
-
-        //_pitcher = game.currentHalf.GetPitcher();
-        //_batter = game.currentHalf.GetBatter();
+        game = new DerbyGame();
+        game.pitcher = _pitcher;
+        game.batter = _batter;
+        game.ball = _ball;
+        game.catcher = _catcher;
+        //game.player1InputController = inputController;
 
         // connect baseball framework with unity scene elements
-        pitcher.SetBFPitcher(game.pitcherActor);
-        batter.SetBatterActor(game.batterActor);
-        //batter.onAnim = ()=> { game.batterActor.ReturnBall(); };
-        //game.batterActor.OnStartSwing = batter.DoSwing;
-        ball.ConnectActor(game.ballActor);
-        input.ConnectInput(game.player1InputController);
-
-
-        //game.SetState(GameState.BattingAndPitching);
+        pitcher.SetBFPitcher(game.pitcher);
+        batter.SetBatterActor(game.batter);
+        ball.ConnectActor(game.ball);
+        //input.ConnectInput(game.player1InputController);
 
         // when catcher get the ball, notify game that ball touched home
-        catcher.ConnectActor(game.catcherActor);
-        //catcher.onBallCatched = () => game.BallTouchHome();
+        catcher.ConnectActor(game.catcher);
 
-        game.SetListener(this);
-
-        game.Start();
+        game.Init();
     }
 
     // Update is called once per frame
@@ -109,16 +70,6 @@ public class HomerunDerbyManager : MonoBehaviour, IGameListener
         game.Update(Time.deltaTime);
     }
 
-    // IGameListener
-    public void ShowStrikeMessage()
-    {
-        hit.SetActive(true);
-    }
-
-    public void HideStrikeMessage()
-    {
-        hit.SetActive(false);
-    }
 
     public BFPitcher CreateAIPitcher()
     {

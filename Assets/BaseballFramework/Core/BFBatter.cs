@@ -38,6 +38,15 @@ namespace MarcoTMP.BaseballFramework.Core
             // var batterBrain = currentTeam.GetBatterBrain();
         }
 
+        public virtual void Init()
+        {
+            throw new NotImplementedException();
+        }
+
+        virtual public void Activate()
+        {
+        }
+
         public void Enable()
         {
             isActive = true;

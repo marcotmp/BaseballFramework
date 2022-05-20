@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.BaseballFramework.Tests.Edit.Unit
+namespace Assets.BaseballFramework.Tests.Edit.Unit.HalfInning
 {
     class HalfInningBoardTest
     {
@@ -101,6 +101,7 @@ namespace Assets.BaseballFramework.Tests.Edit.Unit
     public class Catcher
     {
         public bool hasTheBall = false;
+
         public event Action CatchTheBall;
     }
 
